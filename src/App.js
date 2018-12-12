@@ -7,6 +7,8 @@ import RecipeListContainer from './components/recipes/RecipeListContainer';
 import LoginFormContainer from './components/login/LoginFormContainer';
 import LogoutPage from './components/logout/LogoutPage';
 import SignupFormContainer from './components/signup/SignupFormContainer';
+import { Footer } from './components/footer/Footer';
+// import './App.css'
 
 class App extends Component {
   render() {
@@ -21,8 +23,9 @@ class App extends Component {
             <Route exact path='/signup' component={SignupFormContainer} />
             <Route exact path='/' render={() => <Redirect to='/recipes' />} />
           </main>
+
           <footer className="App-footer">
-            <p>FOOTER</p>
+            <Footer />
           </footer>
         </div>
       </Provider>
