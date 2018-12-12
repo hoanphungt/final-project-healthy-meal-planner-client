@@ -22,7 +22,7 @@ class App extends Component {
           <header>
             <Navbar />
           </header>          
-          <main>
+          <main className='container'>
             <Route exact path='/planner' component={PlannerListContainer} />
             <Route exact path='/recipes/:id' component={RecipeDetailsContainer} />
             <Route exact path='/recipes' component={RecipeListContainer} />

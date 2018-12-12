@@ -1,0 +1,12 @@
+.col {
+    height: 250px;
+    width: 40px;
+    background: #F2F2F2;
+    margin: 20px 40px 20px 0px;
+}
+
+.btn-floating {
+    bottom: 160px;
+    left: 70%;
+
+}

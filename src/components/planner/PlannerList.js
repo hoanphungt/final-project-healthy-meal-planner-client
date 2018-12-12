@@ -9,17 +9,21 @@ export const PlannerList = (props) => {
     return (
         <div>
             <h1>YOUR WEEKLY PLANNER</h1>
+            <h4>DINNER</h4>
             <button>Add all to Shopping List</button>
-            <ol>
+            <div className='row'>
                 {props.planner.map(menu => {
                     return (
-                        <div key={menu.id}>
+                        <div className='col s2'>
                             <h4>Day {menu.id}: <Link to={`/recipes/${menu.recipe.id}`}>{menu.recipe.name}</Link></h4>
                         </div>
-                    )                    
+                    )
                 })}
-            </ol>
-            
+                
+        
+
+            </div>
+            <a className="btn-floating btn-large waves-effect waves-light red"><i className="material-icons">add</i></a>
         </div>
     )
 }
