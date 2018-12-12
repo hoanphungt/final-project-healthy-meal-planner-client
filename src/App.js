@@ -4,6 +4,7 @@ import store from './store'
 import { Route, Redirect } from 'react-router-dom'
 import PlannerListContainer from './components/planner/PlannerListContainer';
 import RecipeListContainer from './components/recipes/RecipeListContainer';
+import RecipeDetailsContainer from './components/recipes/RecipeDetailsContainer';
 import LoginFormContainer from './components/login/LoginFormContainer';
 import LogoutPage from './components/logout/LogoutPage';
 import SignupFormContainer from './components/signup/SignupFormContainer';
@@ -17,6 +18,7 @@ class App extends Component {
         <div className="App">
           <main>
             <Route exact path='/planner' component={PlannerListContainer} />
+            <Route exact path='/recipes/:id' component={RecipeDetailsContainer} />
             <Route exact path='/recipes' component={RecipeListContainer} />
             <Route exact path='/login' component={LoginFormContainer} />
             <Route exact path='/logout' component={LogoutPage} />
