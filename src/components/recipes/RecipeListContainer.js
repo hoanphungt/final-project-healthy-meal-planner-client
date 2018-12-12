@@ -4,7 +4,7 @@ import { RecipeList } from './RecipeList';
 
 class RecipeListContainer extends React.Component {
     render() {
-        return <RecipeList recipes={this.props.recipes}/>
+        return <RecipeList recipes={this.props.recipes} />
     }
 }
 

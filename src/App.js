@@ -8,19 +8,27 @@ import RecipeDetailsContainer from './components/recipes/RecipeDetailsContainer'
 import LoginFormContainer from './components/login/LoginFormContainer';
 import LogoutPage from './components/logout/LogoutPage';
 import SignupFormContainer from './components/signup/SignupFormContainer';
+import { Footer } from './components/footer/Footer';
+// import './App.css'
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
         <div className="App">
-          <Route exact path='/planner' component={PlannerListContainer} />
-          <Route exact path='/recipes/:id' component={RecipeDetailsContainer} />
-          <Route exact path='/recipes' component={RecipeListContainer} />
-          <Route exact path='/login' component={LoginFormContainer} />
-          <Route exact path='/logout' component={LogoutPage} />
-          <Route exact path='/signup' component={SignupFormContainer} />
-          <Route exact path='/' render={() => <Redirect to='/recipes' />} />
+          <main>
+            <Route exact path='/planner' component={PlannerListContainer} />
+            <Route exact path='/recipes/:id' component={RecipeDetailsContainer} />
+            <Route exact path='/recipes' component={RecipeListContainer} />
+            <Route exact path='/login' component={LoginFormContainer} />
+            <Route exact path='/logout' component={LogoutPage} />
+            <Route exact path='/signup' component={SignupFormContainer} />
+            <Route exact path='/' render={() => <Redirect to='/recipes' />} />
+          </main>
+
+          <footer className="App-footer">
+            <Footer />
+          </footer>
         </div>
       </Provider>
     );
