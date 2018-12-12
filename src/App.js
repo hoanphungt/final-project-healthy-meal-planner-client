@@ -17,10 +17,10 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-          <nav>
+          
             <Navbar />
 
-          </nav>
+          
 
           <Route exact path='/planner' component={PlannerListContainer} />
           <Route exact path='/recipes/:id' component={RecipeDetailsContainer} />
