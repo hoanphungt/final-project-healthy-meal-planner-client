@@ -7,12 +7,20 @@ import RecipeListContainer from './components/recipes/RecipeListContainer';
 import LoginFormContainer from './components/login/LoginFormContainer';
 import LogoutPage from './components/logout/LogoutPage';
 import SignupFormContainer from './components/signup/SignupFormContainer';
+import Navbar from './components/navbar/Navbar'
+
+
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
         <div className="App">
+          <nav>
+            <Navbar />
+
+          </nav>
+
           <Route exact path='/planner' component={PlannerListContainer} />
           <Route exact path='/recipes' component={RecipeListContainer} />
           <Route exact path='/login' component={LoginFormContainer} />
