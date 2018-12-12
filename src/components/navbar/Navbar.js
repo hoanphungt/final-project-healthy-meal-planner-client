@@ -40,7 +40,7 @@ const NavBar = (props) => {
 
           <nav>
             <div className="nav-wrapper">
-              <a href="/" className="brand-logo"><i className="material-icons">restaurant_menu</i>MealPlanner</a>
+              <a href="/planner" className="brand-logo"><i className="material-icons">restaurant_menu</i>MealPlanner</a>
 
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
                   
@@ -56,6 +56,7 @@ const NavBar = (props) => {
                 <div>
 
                 <input className="search-box" type="box" placeholder="SEARCHBAR"/>
+                <button className ="search-button">Search</button>
                 </div>
                 </ul>
 
