@@ -13,12 +13,17 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-          <Route exact path='/planner' component={PlannerListContainer} />
-          <Route exact path='/recipes' component={RecipeListContainer} />
-          <Route exact path='/login' component={LoginFormContainer} />
-          <Route exact path='/logout' component={LogoutPage} />
-          <Route exact path='/signup' component={SignupFormContainer} />
-          <Route exact path='/' render={() => <Redirect to='/recipes' />} />
+          <main>
+            <Route exact path='/planner' component={PlannerListContainer} />
+            <Route exact path='/recipes' component={RecipeListContainer} />
+            <Route exact path='/login' component={LoginFormContainer} />
+            <Route exact path='/logout' component={LogoutPage} />
+            <Route exact path='/signup' component={SignupFormContainer} />
+            <Route exact path='/' render={() => <Redirect to='/recipes' />} />
+          </main>
+          <footer className="App-footer">
+            <p>FOOTER</p>
+          </footer>
         </div>
       </Provider>
     );
