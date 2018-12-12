@@ -14,7 +14,7 @@ export const PlannerList = (props) => {
                 {props.planner.map(menu => {
                     return (
                         <div key={menu.id}>
-                            <h4>Day {menu.id}: <Link to={`/planner/${menu.recipe.id}`}>{menu.recipe.name}</Link></h4>
+                            <h4>Day {menu.id}: <Link to={`/recipes/${menu.recipe.id}`}>{menu.recipe.name}</Link></h4>
                         </div>
                     )                    
                 })}

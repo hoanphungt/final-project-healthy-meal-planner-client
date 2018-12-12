@@ -4,7 +4,10 @@ import { PlannerList } from './PlannerList';
 
 class PlannerListContainer extends React.Component {
     render() {
-        return <PlannerList planner={this.props.planner}/>
+        return (<div>
+            <PlannerList planner={this.props.planner}/>
+            <button onClick={() => this.props.history.push('/logout')}>Logout</button>
+        </div>)
     }
 }
 
