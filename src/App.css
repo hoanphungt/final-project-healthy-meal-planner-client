@@ -2,11 +2,23 @@
   text-align: center;
 } */
 
-body, input {
-  font-family: 'Avenir Next', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+.container {
+  width: 1440px;
+  margin-left: 5%;
+  margin-right: 0
 }
 
-.App-footer {
+body, input {
+  font-family: 'Dosis', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  background: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* .App-footer {
   background: #999999;
   height: 100px;
   display: flex;
@@ -20,4 +32,4 @@ body, input {
   left: 0px;
   top: 1366px;
 
-}
+} */
