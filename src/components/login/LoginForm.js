@@ -8,9 +8,11 @@ export const LoginForm = (props) => {
         <div>
             <h1>Login</h1>
             <form onSubmit={onSubmit}>
-                Email: <input name='email' onChange={onChange} value={values.email}/>
-                Password: <input name='password' onChange={onChange} value={values.password}/>
-                <button type='submit'>login</button>
+                <input type="box" placeholder="email" name='email' onChange={onChange} value={values.email}/>
+                <input type="box" placeholder="password" name='password' onChange={onChange} value={values.password}/>
+                <button type='submit'>LOG IN</button>
+                <p>FORGOT YOUR PASSWORD?</p>
+                <p>NOT A USER? CREATE AN ACCOUNT.</p>
                 <p><Link to='/signup'>Signup</Link></p>
             </form>
         </div>
