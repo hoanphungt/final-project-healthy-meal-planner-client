@@ -57,6 +57,7 @@ const NavBar = (props) => {
 
                 <input className="search-box" type="box" placeholder="SEARCHBAR"/>
                 </div> */}
+                {/* <button className ="search-button">Search</button> */}
                 </ul>
 
               

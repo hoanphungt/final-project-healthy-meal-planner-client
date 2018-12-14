@@ -1,5 +1,5 @@
 import { LOGIN, LOGOUT } from "../actions/auth";
-import { localStorageJwtKey } from '../constants'
+import { localStorageJwtKey } from '../constant'
 
 let initialState = null
 try {
@@ -15,8 +15,10 @@ catch (error) {
 export default (state = initialState, action = {}) => {
     switch (action.type) {
         case LOGIN:
+            // localStorage.getItem(localStorageJwtKey, action.payload.jwt)
             return action.payload
         case LOGOUT:
+            // localStorage.removeItem(localStorageJwtKey)
             return null    
         default: 
             return state

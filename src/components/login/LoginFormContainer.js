@@ -19,18 +19,18 @@ class LoginFormContainer extends React.Component {
   }
 
   render() {
-    if (this.props.currentUser) return <Redirect to='/recipes' />
+    if (this.props.currentUser) return <Redirect to='/planner' />
 
     return (<div>
       <LoginForm onSubmit={this.onSubmit} onChange={this.onChange} values={this.state} />
-      {/* <p style={{color:"red"}}>{this.props.error}</p> */}
+      <p style={{color:"red"}}>{this.props.error}</p>
     </div>)
   }
 }
 
 const mapStateToProps = (state) => ({
   currentUser: state.currentUser,
-  // error: state.login.error
+  error: state.login.error
 })
 
 export default connect(mapStateToProps, { login })(LoginFormContainer)
