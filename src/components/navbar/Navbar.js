@@ -53,11 +53,11 @@ const NavBar = (props) => {
                   <li><a href="#">SHOPPING LIST</a></li>
                   {/* <button onClick={() => history.push('/login')}>Login</button> */}
                   {/* <button onClick={() => history.push('/signup')}>Sign up</button> */}
-                <div>
+                {/* <div>
 
                 <input className="search-box" type="box" placeholder="SEARCHBAR"/>
-                <button className ="search-button">Search</button>
-                </div>
+                </div> */}
+                {/* <button className ="search-button">Search</button> */}
                 </ul>
 
               

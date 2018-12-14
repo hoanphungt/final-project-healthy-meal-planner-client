@@ -19,7 +19,7 @@ class LoginFormContainer extends React.Component {
   }
 
   render() {
-    if (this.props.currentUser) return <Redirect to='/recipes' />
+    if (this.props.currentUser) return <Redirect to='/planner' />
 
     return (<div>
       <LoginForm onSubmit={this.onSubmit} onChange={this.onChange} values={this.state} />
