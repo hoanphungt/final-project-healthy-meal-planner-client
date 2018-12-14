@@ -4,7 +4,10 @@ import { RecipeList } from './RecipeList';
 
 class RecipeListContainer extends React.Component {
     render() {
-        return <RecipeList recipes={this.props.recipes}/>
+        return <div>
+            <RecipeList recipes={this.props.recipes}/>
+            <button onClick={() => this.props.history.push('/logout')}>Logout</button>
+        </div>
     }
 }
 
