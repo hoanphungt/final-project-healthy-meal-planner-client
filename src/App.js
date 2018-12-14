@@ -31,7 +31,7 @@ class App extends Component {
             <Route exact path='/login' component={LoginFormContainer} />
             <Route exact path='/logout' component={LogoutPage} />
             <Route exact path='/signup' component={SignupFormContainer} />
-            <Route exact path='/' render={() => <Redirect to='/recipes' />} />
+            <Route exact path='/' render={() => <Redirect to='/planner' />} />
           </main>
           <footer className="App-footer">
             <Footer />
