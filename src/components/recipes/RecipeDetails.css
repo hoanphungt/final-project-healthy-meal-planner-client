@@ -1,0 +1,48 @@
+/* .container {
+  left: 293px
+} */
+
+.meal{
+  margin-top: 213px
+}
+
+.favorites{
+  left: 163px;
+  top: 322px;
+  width: 136px;
+  height: 53px;
+  border-radius: 20px;
+  font-size:9px;
+  
+}
+
+.shopping{
+  left: 321px;
+  top: 322px;
+  width: 136px;
+  height: 53px;
+  margin-left: 22px;
+  border-radius: 20px;
+  font-size:9px
+  
+}
+
+.row{
+  font-size: 20px
+}
+
+.image{
+  position: absolute;
+  left: 727px;
+  top: 212px;
+  margin-right: 165px
+}
+
+.nutritionButtons{
+  height: 82px;
+  width: 55px;
+  border-radius: 10px;
+  margin-right: 16px;
+  margin-top: 23px;
+  font-size: 14px
+}
