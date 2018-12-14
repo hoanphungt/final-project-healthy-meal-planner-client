@@ -1,0 +1,17 @@
+.footer {
+  font-size: 18px;
+  font-weight: bold;
+  background: #999999;
+  height: 100px;
+  padding: 60px 0 0 100px;
+  /* margin: 20px 0 0 60px; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  color: white;
+  width: 1440px;
+  height: 256px;
+  left: 0px;
+  top: 1366px;
+}

@@ -19,10 +19,12 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-          {/* <header>
+           <header>
             <Navbar />
-          </header>           */}
-          <main>
+          </header>           
+          
+                   
+          <main className='container'>
             <Route exact path='/planner' component={PlannerListContainer} />
             <Route exact path='/recipes/:id' component={RecipeDetailsContainer} />
             <Route exact path='/recipes' component={RecipeListContainer} />
