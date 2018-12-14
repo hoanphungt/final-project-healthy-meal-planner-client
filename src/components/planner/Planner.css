@@ -1,19 +1,32 @@
-.col {
+/* .col {
     height: 250px;
     width: 40px;
     background: #F2F2F2;
     margin: 20px 40px 20px 0px;
-}
+} */
 
-h1 {
+h1.planner-list {
     text-align: center;
     font-size: 30px;
+    font-weight: bold;
+}
+
+h4 {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 18px;
     font-weight: bold;
 }
 
 ul {
     text-align: left;
     width: auto;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+    font-size: 18px;
 }
   
 li.planner {
@@ -55,10 +68,10 @@ i.small {
 }
 
 .button {
-    position: absolute;
-    width: 167px;
-    height: 39px;
-    left: 162px;
+    padding: 4px;
+    width: 180px;
+    height: 40px;
+    margin: 20px 0 20px 20px;
     top: 200px;
     border-radius: 20px;
 }

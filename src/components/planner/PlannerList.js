@@ -9,18 +9,9 @@ export const PlannerList = (props) => {
 
     return (
         <div>
-            <h1>YOUR WEEKLY PLANNER</h1>
-            <h4>DINNER</h4>
-            <button className='button'>Add all to Shopping List</button>
-            {/* <div className='row'>
-                {props.planner.map(menu => {
-                    return (
-                        <div className='col s2'>
-                            <h4>Day {menu.id}: <Link to={`/recipes/${menu.recipe.id}`}>{menu.recipe.name}</Link></h4>
-                        </div>
-                    )
-                })}
-            </div> */}
+            <h1 className='planner-list'>YOUR WEEKLY PLANNER</h1>
+            <ul><li>BREAKFAST</li><li>LUNCH</li><li style={{fontWeight: 'bold'}}>DINNER</li><li>SNACK</li></ul>
+            <div><button className='button'>Add all to Shopping List</button></div>
             <ul>
                 {props.planner.map(menu => {
                     return (
