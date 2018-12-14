@@ -19,7 +19,7 @@ export const PlannerList = (props) => {
                             <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQoE0L43jH6eh5DxXUaT7TPzIzjb2OcxiXyAcMFqIprusSCkCKw' width='200px' height='160px'/>
                             <h3 style={{fontWeight: 'bold'}}>NAME OF THE MEAL</h3>
                             <span>COOKING TIME</span><br></br>
-                            <i class="small material-icons">star_border star_border star_border star_border star_border</i><br></br>
+                            <i className="small material-icons">star_border star_border star_border star_border star_border</i><br></br>
                             <span>NUTRITION INFO</span><br></br>
                             <button className='change-button'>CHANGE</button>
                             <button className='add-to-shopping-list-button'>ADD TO LIST</button>
