@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import RecipeDetails from './RecipeDetails';
 import { connect } from 'react-redux';
+import Navbar from '../navbar/Navbar';
+import { Newbar } from '../navbar/Newbar';
 
 class RecipeDetailsContainer extends Component {
   state = {  }
   render() { 
     return ( 
-      <RecipeDetails recipe={this.props.recipe} />
+      <div>
+          {/* <Newbar />    */}
+        <RecipeDetails recipe={this.props.recipe} />
+
+      </div>
      );
   }
 }

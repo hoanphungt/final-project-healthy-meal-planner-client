@@ -16,7 +16,7 @@ export const PlannerList = (props) => {
                 {props.planner.map(menu => {
                     return (
                         <li className='planner' key={menu.id}>
-                            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQoE0L43jH6eh5DxXUaT7TPzIzjb2OcxiXyAcMFqIprusSCkCKw' width='200px' height='160px'/>
+                            <Link to={`./recipes/${menu.id}`}><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQoE0L43jH6eh5DxXUaT7TPzIzjb2OcxiXyAcMFqIprusSCkCKw' width='200px' height='160px'/></Link>
                             <h3 style={{fontWeight: 'bold'}}>NAME OF THE MEAL</h3>
                             <span>COOKING TIME</span><br></br>
                             <i className="small material-icons">star_border star_border star_border star_border star_border</i><br></br>

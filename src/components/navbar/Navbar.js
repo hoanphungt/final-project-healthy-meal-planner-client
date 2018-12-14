@@ -39,7 +39,7 @@ const NavBar = (props) => {
           
 
           <nav>
-            <div className="nav-wrapper">
+            <div className="nav-wrapper1">
               <a href="/planner" className="brand-logo"><i className="material-icons">restaurant_menu</i>MealPlanner</a>
 
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
