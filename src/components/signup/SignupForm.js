@@ -3,33 +3,33 @@ import './SignupForm.css'
 
 export default class SignupForm extends PureComponent {
     state = {
-        adult: 0,
-        children: 0
+        adultsNumber: 0,
+        childrensNumber: 0
     }
 
     onClick1 = () => {
         this.setState({
-            adult: this.state.adult + 1
+            adultsNumber: this.state.adultsNumber + 1
         })
     }
 
     onClick2 = () => {
-        if (this.state.adult < 1) return 0
+        if (this.state.adultsNumber < 1) return 0
         this.setState({
-            adult: this.state.adult - 1
+            adultsNumber: this.state.adultsNumber - 1
         })
     }
 
     onClick3 = () => {
         this.setState({
-            children: this.state.children + 1
+            childrensNumber: this.state.childrensNumber + 1
         })
     }
 
     onClick4 = () => {
-        if (this.state.children < 1) return 0
+        if (this.state.childrensNumber < 1) return 0
         this.setState({
-            children: this.state.children - 1
+            childrensNumber: this.state.childrensNumber - 1
         })
     }
 
@@ -51,7 +51,7 @@ export default class SignupForm extends PureComponent {
     }
 
     render() {
-        console.log(this.state.adult)
+        console.log(this.state)
         return (            
             <div className='signup'>
                 <b>Welcome to planet friendly meal planner!</b>
@@ -63,8 +63,8 @@ export default class SignupForm extends PureComponent {
                     <form onClick={this.handleClick} >
                         <b>How many people you cook for?</b>
                         <hr/>
-                        <p> ADULT <button onClick={this.onClick2}> - </button> {this.state.adult}  <button onClick={this.onClick1}> + </button></p>
-                        <p> CHILDREN <button onClick={this.onClick4}> - </button> {this.state.children} <button onClick={this.onClick3}> + </button></p>
+                        <p> ADULT <button onClick={this.onClick2}> - </button> {this.state.adultsNumber}  <button onClick={this.onClick1}> + </button></p>
+                        <p> CHILDREN <button onClick={this.onClick4}> - </button> {this.state.childrensNumber} <button onClick={this.onClick3}> + </button></p>
                     </form>
 
                 <div>
