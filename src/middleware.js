@@ -1,5 +1,5 @@
 import {LOGIN, LOGOUT} from './actions/auth'
-import {localStorageJwtKey} from './constants'
+import {localStorageJwtKey} from './constant'
 
 export const storeJwt = store => next => action => {
   try {

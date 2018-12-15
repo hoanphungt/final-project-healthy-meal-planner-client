@@ -42,7 +42,7 @@ export default function RecipeDetails (props) {
           
         </div>
         <div className="image">
-          <img src="https://www.seriouseats.com/recipes/images/2016/08/20160827-cherry-tomato-pasta-13-1500x1125.jpg" alt="image" width='548px' />
+          <img src="https://www.seriouseats.com/recipes/images/2016/08/20160827-cherry-tomato-pasta-13-1500x1125.jpg" alt="meal" width='548px' />
         </div>
         <hr/>
       </div>

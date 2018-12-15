@@ -15,10 +15,10 @@ catch (error) {
 export default (state = initialState, action = {}) => {
     switch (action.type) {
         case LOGIN:
-            // localStorage.getItem(localStorageJwtKey, action.payload.jwt)
+            localStorage.getItem(localStorageJwtKey, action.payload.jwt)
             return action.payload
         case LOGOUT:
-            // localStorage.removeItem(localStorageJwtKey)
+            localStorage.removeItem(localStorageJwtKey)
             return null    
         default: 
             return state
