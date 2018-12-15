@@ -1,10 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './RecipeList.css'
 
 export const RecipeList = (props) => {
-    console.log(props.recipes)
-
     if (props.recipes === null) return <h1>Loading ...</h1>
 
     return (
@@ -64,7 +62,7 @@ export const RecipeList = (props) => {
                 {props.recipes.map(recipe => {
                     return (
                         <li key={recipe.id} className='recipe'>
-                            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQoE0L43jH6eh5DxXUaT7TPzIzjb2OcxiXyAcMFqIprusSCkCKw' width='200px' height='160px' />
+                            <img alt='meal' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQoE0L43jH6eh5DxXUaT7TPzIzjb2OcxiXyAcMFqIprusSCkCKw' width='200px' height='160px' />
                             <h3 style={{ fontWeight: 'bold' }}>NAME OF THE MEAL</h3>
                             <span>COOKING TIME</span><br></br>
                             <i className="small material-icons">star_border star_border star_border star_border star_border</i><br></br>

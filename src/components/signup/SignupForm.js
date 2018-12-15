@@ -4,7 +4,7 @@ import './SignupForm.css'
 export default class SignupForm extends PureComponent {
     state = {
         adultsNumber: 0,
-        childrensNumber: 0
+        childrenNumber: 0
     }
 
     onClick1 = () => {
@@ -22,14 +22,14 @@ export default class SignupForm extends PureComponent {
 
     onClick3 = () => {
         this.setState({
-            childrensNumber: this.state.childrensNumber + 1
+            childrenNumber: this.state.childrenNumber + 1
         })
     }
 
     onClick4 = () => {
-        if (this.state.childrensNumber < 1) return 0
+        if (this.state.childrenNumber < 1) return 0
         this.setState({
-            childrensNumber: this.state.childrensNumber - 1
+            childrenNumber: this.state.childrenNumber - 1
         })
     }
 
@@ -64,7 +64,7 @@ export default class SignupForm extends PureComponent {
                         <b>How many people you cook for?</b>
                         <hr/>
                         <p> ADULT <button onClick={this.onClick2}> - </button> {this.state.adultsNumber}  <button onClick={this.onClick1}> + </button></p>
-                        <p> CHILDREN <button onClick={this.onClick4}> - </button> {this.state.childrensNumber} <button onClick={this.onClick3}> + </button></p>
+                        <p> CHILDREN <button onClick={this.onClick4}> - </button> {this.state.childrenNumber} <button onClick={this.onClick3}> + </button></p>
                     </form>
 
                 <div>

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import RecipeDetails from './RecipeDetails';
 import { connect } from 'react-redux';
-import Navbar from '../navbar/Navbar';
-import { Newbar } from '../navbar/Newbar';
+// import Navbar from '../navbar/Navbar';
+// import { Newbar } from '../navbar/Newbar';
 
 class RecipeDetailsContainer extends Component {
   state = {  }

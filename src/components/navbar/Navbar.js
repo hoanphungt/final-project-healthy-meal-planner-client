@@ -6,7 +6,7 @@ import './Navbar.css'
 
 
 const NavBar = (props) => {
-    const { location, history, user } = props
+    // const { location, history, user } = props
 
     return (
         <div>
@@ -45,12 +45,12 @@ const NavBar = (props) => {
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
                   
                   
-                  <li><a href="#">YOUR WEEKLY PLANNER</a></li>
-                  <li><a href="#">SEARCH</a></li>
-                  <li><a href="#">FAVORITES</a></li>
-                  <li><a href="#">CREATE YOUR OWN</a></li>
-                  <li><a href="#">BLOG</a></li>
-                  <li><a href="#">SHOPPING LIST</a></li>
+                  <li><a href="/planner">YOUR WEEKLY PLANNER</a></li>
+                  <li><a href="/recipes">SEARCH</a></li>
+                  <li><a href="/favorites">FAVORITES</a></li>
+                  <li><a href="/create">CREATE YOUR OWN</a></li>
+                  <li><a href="/blog">BLOG</a></li>
+                  <li><a href="/shopping-list">SHOPPING LIST</a></li>
                   {/* <button onClick={() => history.push('/login')}>Login</button> */}
                   {/* <button onClick={() => history.push('/signup')}>Sign up</button> */}
                  <div>
