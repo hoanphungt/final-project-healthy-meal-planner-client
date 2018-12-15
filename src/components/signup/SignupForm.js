@@ -51,7 +51,6 @@ export default class SignupForm extends PureComponent {
     }
 
     render() {
-        console.log(this.state)
         return (            
             <div className='signup'>
                 <b>Welcome to planet friendly meal planner!</b>
