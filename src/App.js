@@ -35,7 +35,7 @@ class App extends Component {
           </main>
           <footer className="App-footer">
             <Footer />
-          </footer> 
+          </footer>  
         </div>
       </Provider>
     );
