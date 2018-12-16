@@ -1,3 +1,145 @@
-.signup{
-    
+
+@import url("https://fonts.googleapis.com/css?family=Dosis|Open+Sans");
+
+.header{
+  position: absolute;
+  width: 1115px;
+  height: 40px;
+  left: 163px;
+  top: 174px;
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: bold;
+  line-height: 27px;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #023C40;
+}
+
+.intro{
+  position: absolute;
+  width: 909px;
+  height: 118px;
+  left: 277px;
+  top: 238px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #131515;
+}
+
+.question{
+  position: absolute;
+  width: 1115px;
+  height: 40px;
+  left: 163px;
+  top: 413px;
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 27px;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #023C40;
+}
+
+.buttons{
+  position: absolute;
+  width: 90px;
+  height: 23px;
+  left: 446px;
+  top: 511px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #131515;
+}
+
+.details{
+  position: absolute;
+  width: 1087px;
+  height: 39px;
+  left: 177px;
+  top: 652px;
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 27px;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #023C40;
+}
+
+.form{
+  position: absolute;
+  width: 140px;
+  height: 28px;
+  left: 263px;
+  top: 760px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  /* line-height: 48px; */
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #131515;
+}
+
+
+.hr1{
+  position: absolute;
+  width: 1066.02px;
+  height: 0px;
+  left: 199px;
+  top: 460px;
+  /* Light Grey */
+  border: 1px solid #BAC1B8;
+}
+
+.hr2{
+  position: absolute;
+  width: 1039.81px;
+  height: 0px;
+  left: 211.82px;
+  top: 699.79px;
+  /* Light Grey */
+  border: 1px solid #BAC1B8;
+}
+
+.form button{
+    /* position: absolute;
+    color: white;
+    bottom: 0%; */
+  /* margin-top: 527px; */
+  /* margin-right: 1075px; */
+  width: 300px;
+  height: 80px;
+  background: #339989;
+  border-radius: 80px;
+  color: white;
+  font-family: 'Dosis';
+  font-weight: Bold;
+  font-size: 25px;
+  line-height: 50px;
+  align-content:  Center  ;
+}
+
+.buttons button{
+  width: 30px;
+  height: 39px;
+  background-color:white;
+  border: solid 1px #339989;
+  border-radius: 100%;
+  color: #339989 ;
+  
 }
