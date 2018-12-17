@@ -1,5 +1,8 @@
 .signupForm{
-  height: 1200px
+  height: 1200px;
+  width: 100%;
+  margin-top: 200px;
+  position: relative;
 }
 
 .title{
