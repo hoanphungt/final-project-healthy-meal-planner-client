@@ -3,6 +3,7 @@ import { LoginForm } from './LoginForm'
 import { connect } from 'react-redux'
 import { login } from '../../actions/auth'
 import { Redirect } from 'react-router-dom'
+import './Login.css'
 
 class LoginFormContainer extends React.Component {
   state = { email: '', password: '' }
@@ -21,7 +22,7 @@ class LoginFormContainer extends React.Component {
   render() {
     if (this.props.currentUser) return <Redirect to='/planner' />
 
-    return (<div>
+    return (<div className='login'>
       <LoginForm onSubmit={this.onSubmit} onChange={this.onChange} values={this.state} />
       <p style={{color:"red"}}>{this.props.error}</p>
     </div>)
