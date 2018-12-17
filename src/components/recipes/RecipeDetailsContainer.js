@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import RecipeDetails from './RecipeDetails';
 import { connect } from 'react-redux';
-import { loadRecipe } from '../../actions/recipe'
+import { loadRecipe } from '../../actions/recipes'
 import { loadUser } from '../../actions/user'
+import { Link } from 'react-router-dom'
 
 // import Navbar from '../navbar/Navbar';
 // import { Newbar } from '../navbar/Newbar';
