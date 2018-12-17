@@ -9,6 +9,7 @@ h1.planner-list {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    margin-top: 14%
 }
 
 h4 {
@@ -40,6 +41,7 @@ li.planner {
     list-style: none;
     text-align: left;
     vertical-align: top;
+    top: 0
 }
   
 li.add-button:last-of-type {

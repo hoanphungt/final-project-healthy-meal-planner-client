@@ -5,7 +5,7 @@ export const PlannerList = (props) => {
     if (props.planner === null) return <h1>Loading ...</h1>
 
     return (
-        <div>
+        <div className='planner'>
             <h1 className='planner-list'>YOUR WEEKLY PLANNER</h1>
             <ul><li>BREAKFAST</li><li>LUNCH</li><li style={{fontWeight: 'bold'}}>DINNER</li><li>SNACK</li></ul>
             <div><button className='button'>Add all to Shopping List</button></div>
