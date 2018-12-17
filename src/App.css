@@ -1,6 +1,7 @@
 /* .App {
   text-align: center;
 } */
+@import url("https://fonts.googleapis.com/css?family=Dosis|Open+Sans");
 
 .container {
   width: 1440px;
@@ -17,19 +18,3 @@ body, input {
   margin: 0;
   padding: 0;
 }
-
-/* .App-footer {
-  background: #999999;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  width: 1440px;
-  height: 256px;
-  left: 0px;
-  top: 1366px;
-
-} */
