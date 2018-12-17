@@ -3,7 +3,7 @@ import RecipeDetails from './RecipeDetails';
 import { connect } from 'react-redux';
 import { loadRecipe } from '../../actions/recipes'
 import { loadUser } from '../../actions/user'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 // import Navbar from '../navbar/Navbar';
 // import { Newbar } from '../navbar/Newbar';
@@ -16,10 +16,8 @@ class RecipeDetailsContainer extends Component {
   state = {  }
   render() { 
     return ( 
-      <div>
-          {/* <Newbar />    */}
-
-        <Link to='/recipes'>Go Back</Link>
+      <div className='recipe-details'>
+        <button className='go-back-button' onClick={() => {this.props.history.push('/recipes')}}>Go Back</button>
         <RecipeDetails recipe={this.props.recipe} user={this.props.user}/> 
       </div>
      );
