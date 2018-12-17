@@ -1,11 +1,9 @@
-
-
-import {RECIPE_LOADED} from '../actions/recipe'
+import {USER_LOADED} from '../actions/user'
 
 export default (state = null, action = {}) => {
     switch (action.type){
-        case RECIPE_LOADED:
-        return action.recipe
+        case USER_LOADED:
+        return action.user
         default:
         return state
     }
