@@ -6,9 +6,7 @@ export default function RecipeDetails (props) {
   
   if (props.recipe === null) return <h1>Loading ...</h1>
   if (props.user === null) return <h1>Loading ...</h1>
-  
-  
-
+  console.log(props.user)
   return (
     <div className="meal container" key={props.recipe.id}>
       <b className="meal"> {props.recipe.name.toUpperCase()}</b>
@@ -22,7 +20,7 @@ export default function RecipeDetails (props) {
       </div>
       <div>
         
-        <p>SERVES {''}<b>{props.user.adultsNumber}</b><i className="material-icons">person</i> {''} <b>{props.user.childrenNumber}</b><i className="material-icons"> <span> person</span></i> </p> 
+        <p>SERVES <b>{props.user.adultsNumber}</b><i className="material-icons">person</i> {''} <b>{props.user.childrenNumber}</b><i className="material-icons"> <span> person</span></i> </p> 
         <span><i className="material-icons">access_time</i>{props.recipe.cookingTime} MINUTES</span>
         <p>DIETARY OPTION: {props.recipe.dietary.toUpperCase()}</p>
         <p>ALLERGIES</p>
