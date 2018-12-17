@@ -20,7 +20,7 @@ export const RecipeList = (props) => {
                         <span className="checkmark">Lunch</span><br></br>
                     </label>
                     <label className='checkbox'>
-                        <input type='checkbox' />
+                        <input type='checkbox' checked='checked' />
                         <span className="checkmark">Dinner</span><br></br>
                     </label>
                     <label className='checkbox'>
