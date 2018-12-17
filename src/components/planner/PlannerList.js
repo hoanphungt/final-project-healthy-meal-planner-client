@@ -10,7 +10,7 @@ export const PlannerList = (props) => {
             <ul><li>BREAKFAST</li><li>LUNCH</li><li style={{fontWeight: 'bold'}}>DINNER</li><li>SNACK</li></ul>
             <div><button className='button'>Add all to Shopping List</button></div>
             <ul>
-                {props.planner.days.map(day => {
+                {props.planner.map(day => {
                     return (
                         <li className='planner' key={day.id}>
                             <Link to={`./recipes/${day.recipe.id}`}><img alt='meal' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQoE0L43jH6eh5DxXUaT7TPzIzjb2OcxiXyAcMFqIprusSCkCKw' width='200px' height='160px'/></Link>
