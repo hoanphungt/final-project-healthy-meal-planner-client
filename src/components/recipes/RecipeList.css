@@ -1,3 +1,8 @@
+.row {
+    margin-top: 14%;
+    width: 100%
+}
+
 h1 {
     text-align: left;
     font-size: 30px;
@@ -12,7 +17,7 @@ h2 {
 
 ul {
     text-align: left;
-    width: auto;
+    width: 100%;
 }
 
 li.recipe {
@@ -33,6 +38,7 @@ li.recipe {
     height: auto;
     background-color: white;
     margin: 20px 40px 20px 0px;
+    width: 100%
 }
 
 .checkmark {
@@ -43,11 +49,25 @@ li.recipe {
     width: 200px;
 }
 
-/* 
-.checkbox {
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
     display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-} */
+
+}
+
+.checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

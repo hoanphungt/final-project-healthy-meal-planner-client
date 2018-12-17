@@ -1,25 +1,12 @@
-/* import React from 'react';
-
-export default function RecipeDetails (props) {
-  console.log(props.recipe)
-  return (
-    <div key={props.recipe.id}>
-      <h2>Name: {props.recipe.name}</h2>
-      <p>Cooking Time: {props.recipe.cookingTime}</p>
-      <p>Instruction: {props.recipe.instruction}</p>
-      <p>{props.recipe.image}</p>
-    </div>
-  )
-} */
-
 
 import React from 'react';
 import './RecipeDetails.css'
 
 export default function RecipeDetails (props) {
-  console.log(props.recipe)
+  
   if (props.recipe === null) return <h1>Loading ...</h1>
-
+  if (props.user === null) return <h1>Loading ...</h1>
+  console.log(props.user)
   return (
     <div className="meal container" key={props.recipe.id}>
       <b className="meal"> {props.recipe.name.toUpperCase()}</b>
@@ -27,11 +14,13 @@ export default function RecipeDetails (props) {
         <i className="material-icons">star_border star_border star_border star_border star_border</i>
       </div>
       <div>
+        <button className="add-planner">ADD TO THE PLANNER</button>
         <button className="favorites">ADD TO FAVOURITE</button>
         <button className="shopping" onClick={props.addToShoppingList}>ADD TO SHOPPING LIST</button>
       </div>
       <div>
-        <p><i className="material-icons">person</i>SERVES {props.recipe.serves}</p>
+        
+        <p>SERVES <b>{props.user.adultsNumber}</b><i className="material-icons">person</i> {''} <b>{props.user.childrenNumber}</b><i className="material-icons"> <span> person</span></i> </p> 
         <span><i className="material-icons">access_time</i>{props.recipe.cookingTime} MINUTES</span>
         <p>DIETARY OPTION: {props.recipe.dietary.toUpperCase()}</p>
         <p>ALLERGIES</p>
@@ -44,7 +33,7 @@ export default function RecipeDetails (props) {
           
         </div>
         <div className="image">
-          <img src={props.recipe.image} alt="meal" width='548px' />
+          <img src={props.recipe.image} alt="meal" width='548px'/>
         </div>
         <hr/>
       </div>
@@ -54,7 +43,7 @@ export default function RecipeDetails (props) {
             {props.recipe.recipeIngredients.map(ingredient => {
               return (
                 <div key={ingredient.id}>
-                  <li>{ingredient.quantity} {ingredient.unit.name} {ingredient.ingredient.name}</li>
+                  <li>{ingredient.quantity * (props.user.adultsNumber + (0.5 * props.user.childrenNumber))} {ingredient.unit.name} {ingredient.ingredient.name}</li>
                 </div>
               )
             })}

@@ -17,6 +17,7 @@ export const loadPlanner = () => (dispatch, getState) => {
     request
         .get(`${baseUrl}/myplanner`)
         .set('Authorization', `Bearer ${jwt}`)
+        .query(3)
         .then(response => {
             dispatch(plannerLoaded(response.body))
         })

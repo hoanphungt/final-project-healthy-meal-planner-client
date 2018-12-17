@@ -14,9 +14,9 @@ export default combineReducers({
     recipes,
     recipe,
     currentUser,
+    user,
     login,
     signup,
     shoppingList,
-    user,
 })
 

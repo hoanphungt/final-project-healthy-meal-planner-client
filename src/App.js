@@ -22,17 +22,15 @@ class App extends Component {
         <div className="App">
            <header>
             <Navbar />
-          </header>           
-          
-                   
+          </header>    
           <main className='container'>
             <Route exact path='/planner' component={PlannerListContainer} />
             <Route exact path='/recipes/:id' component={RecipeDetailsContainer} />
             <Route exact path='/recipes' component={RecipeListContainer} />
             <Route exact path='/shopping-list' component={ShoppingListContainer} />
-            <Route exact path='/login' component={LoginFormContainer} />
-            <Route exact path='/logout' component={LogoutPage} />
             <Route exact path='/signup' component={SignupFormContainer} />
+            <Route exact path='/login' component={LoginFormContainer} />
+            <Route exact path='/logout' component={LogoutPage} />            
             <Route exact path='/' render={() => <Redirect to='/planner' />} />
           </main>
           <footer className="App-footer">
