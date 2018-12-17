@@ -19,6 +19,8 @@ class RecipeDetailsContainer extends Component {
           {/* <Newbar />    */}
         <RecipeDetails recipe={this.props.recipe} user={this.props.user}/> 
 
+        <Link to='/recipes'>Go Back</Link>
+        <RecipeDetails recipe={this.props.recipe} /> 
       </div>
      );
   }

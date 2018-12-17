@@ -1,7 +1,8 @@
+.signupForm{
+  height: 1200px
+}
 
-@import url("https://fonts.googleapis.com/css?family=Dosis|Open+Sans");
-
-.header{
+.title{
   position: absolute;
   width: 1115px;
   height: 40px;
@@ -140,6 +141,5 @@
   background-color:white;
   border: solid 1px #339989;
   border-radius: 100%;
-  color: #339989 ;
-  
+  color: #339989 ;  
 }

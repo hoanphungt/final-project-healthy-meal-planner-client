@@ -52,8 +52,8 @@ export default class SignupForm extends PureComponent {
 
     render() {
         return (            
-            <div className='signup'>
-                <b className="header">Welcome to planet friendly meal planner!</b>
+            <div>
+                <b className='title'>Welcome to planet friendly meal planner!</b>
                 <div className="intro">
                     <p>We’re excited to design a menu that fits your lifestyle and preferences and that helps our planet!</p>
                     <p>When you’re finished taking the quiz below, we’ll plan you incredible meals that will be personalized!</p>
