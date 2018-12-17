@@ -5,31 +5,22 @@
     margin: 20px 40px 20px 0px;
 } */
 
-h1.planner-list {
+.planner-list {
+    width: 100%
+}
+
+h1.planner-title {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    margin-top: 14%
+    margin-top: 2%
 }
 
-h4 {
-    margin-left: 20px;
-    text-align: left;
-    font-size: 18px;
-    font-weight: bold;
+.planner-recipes {
+    width: 100%;
+    height: auto;
 }
 
-ul {
-    text-align: left;
-    width: auto;
-}
-
-li {
-    display: inline-block;
-    margin: 20px;
-    font-size: 18px;
-}
-  
 li.planner {
     position: relative;
     display: inline-block;
@@ -43,6 +34,26 @@ li.planner {
     vertical-align: top;
     top: 0
 }
+
+h4 {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul {
+    text-align: left;
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+    font-size: 18px;
+}
+  
+
   
 li.add-button:last-of-type {
     display: inline-block;
@@ -73,7 +84,7 @@ i.small {
     padding: 4px;
     width: 180px;
     height: 40px;
-    margin: 20px 0 20px 20px;
+    margin-left: 20px;
     top: 200px;
     border-radius: 20px;
 }
