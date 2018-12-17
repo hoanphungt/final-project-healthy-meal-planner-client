@@ -11,6 +11,7 @@ import SignupFormContainer from './components/signup/SignupFormContainer';
 import { Footer } from './components/footer/Footer';
 import './App.css'
 import Navbar from './components/navbar/Navbar'
+import ShoppingListContainer from './components/shoppingList/ShoppingListContainer';
 
 
 
@@ -28,6 +29,7 @@ class App extends Component {
             <Route exact path='/planner' component={PlannerListContainer} />
             <Route exact path='/recipes/:id' component={RecipeDetailsContainer} />
             <Route exact path='/recipes' component={RecipeListContainer} />
+            <Route exact path='/shopping-list' component={ShoppingListContainer} />
             <Route exact path='/login' component={LoginFormContainer} />
             <Route exact path='/logout' component={LogoutPage} />
             <Route exact path='/signup' component={SignupFormContainer} />

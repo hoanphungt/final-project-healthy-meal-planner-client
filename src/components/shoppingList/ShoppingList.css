@@ -1,0 +1,11 @@
+li.shopping-list-ingredient {
+  position: relative;
+  display: inline;
+  list-style: none;
+  text-align: left;
+  vertical-align: top;
+}
+
+.shopping-list-container {
+  width: 800px;
+}

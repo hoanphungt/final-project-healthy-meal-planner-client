@@ -28,7 +28,7 @@ export default function RecipeDetails (props) {
       </div>
       <div>
         <button className="favorites">ADD TO FAVOURITE</button>
-        <button className="shopping">ADD TO SHOPPING LIST</button>
+        <button className="shopping" onClick={props.addToShoppingList}>ADD TO SHOPPING LIST</button>
       </div>
       <div>
         <p><i className="material-icons">person</i>SERVES {props.recipe.serves}</p>

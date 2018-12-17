@@ -3,7 +3,7 @@ import { withRouter } from 'react-router'
 // import { userId } from '../jwt'
 import { connect } from 'react-redux'
 import './Navbar.css'
-
+import { Link } from 'react-router-dom'
 
 const NavBar = (props) => {
     // const { location, history, user } = props
@@ -44,13 +44,15 @@ const NavBar = (props) => {
 
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
                   
-                  
-                  <li><a href="/planner">YOUR WEEKLY PLANNER</a></li>
-                  <li><a href="/recipes">SEARCH</a></li>
+                
+                  <li> <Link to={'/planner'}>YOUR WEEKLY PLANNER</Link></li>
+                  <li> <Link to={'/recipes'}>SEARCH</Link></li>
+                  <li> <Link to={'/shopping-list'}>SHOPPING LIST</Link></li>
+
+
                   <li><a href="/favorites">FAVORITES</a></li>
                   <li><a href="/create">CREATE YOUR OWN</a></li>
                   <li><a href="/blog">BLOG</a></li>
-                  <li><a href="/shopping-list">SHOPPING LIST</a></li>
                   {/* <button onClick={() => history.push('/login')}>Login</button> */}
                   {/* <button onClick={() => history.push('/signup')}>Sign up</button> */}
                     {/* <input className="search-box" type="box" placeholder="SEARCHBAR"/>
