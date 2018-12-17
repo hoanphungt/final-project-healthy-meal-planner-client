@@ -1,16 +1,16 @@
 .signupForm{
-  height: 1200px;
+  height: 1400px;
   margin-left: 10px;
   width: 100%;
-  margin-top: 0px;
+  margin-top: 20px;
   position: relative;
 }
 
 .title{
   position: absolute;
-  width: 1115px;
+  width: 80%;
   height: 40px;
-  left: 163px;
+  left: 5%;
   top: 174px;
   font-family: 'Dosis';
   font-style: normal;
@@ -24,9 +24,9 @@
 
 .intro{
   position: absolute;
-  width: 909px;
+  width: 65%;
   height: 118px;
-  left: 277px;
+  left: 14%;
   top: 238px;
   font-family: 'Open Sans';
   font-style: normal;
@@ -39,11 +39,11 @@
 
 .question{
   position: absolute;
-  width: 1115px;
+  width: 80%;
   height: 40px;
-  left: 163px;
-  top: 413px;
-  font-family: Dosis;
+  left: 5%;
+  top: 400px;
+  font-family: 'Dosis';
   font-style: normal;
   font-weight: bold;
   line-height: 27px;
@@ -57,9 +57,9 @@
   position: absolute;
   width: 90px;
   height: 23px;
-  left: 446px;
-  top: 511px;
-  font-family: Open Sans;
+  left: 40%;
+  top: 480px;
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: normal;
   line-height: 20px;
@@ -71,11 +71,11 @@
 
 .details{
   position: absolute;
-  width: 1087px;
+  width: 78%;
   height: 39px;
-  left: 177px;
+  left: 5%;
   top: 652px;
-  font-family: Dosis;
+  font-family: 'Dosis';
   font-style: normal;
   font-weight: bold;
   line-height: 27px;
@@ -89,9 +89,9 @@
   position: absolute;
   width: 140px;
   height: 28px;
-  left: 263px;
+  left: 16%;
   top: 760px;
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: normal;
   /* line-height: 48px; */
@@ -103,19 +103,19 @@
 
 .hr1{
   position: absolute;
-  width: 1066.02px;
+  width: 76%;
   height: 0px;
-  left: 199px;
-  top: 460px;
+  left: 10%;
+  top: 440px;
   /* Light Grey */
   border: 1px solid #BAC1B8;
 }
 
 .hr2{
   position: absolute;
-  width: 1039.81px;
+  width: 76%;
   height: 0px;
-  left: 211.82px;
+  left: 10%;
   top: 699.79px;
   /* Light Grey */
   border: 1px solid #BAC1B8;
@@ -136,7 +136,8 @@
   font-weight: Bold;
   font-size: 25px;
   line-height: 50px;
-  align-content:  Center  ;
+  align-content: center;
+  margin-left: 28%
 }
 
 .buttons button{
@@ -146,4 +147,8 @@
   border: solid 1px #339989;
   border-radius: 100%;
   color: #339989 ;  
+}
+
+.form {
+  width: 60%
 }

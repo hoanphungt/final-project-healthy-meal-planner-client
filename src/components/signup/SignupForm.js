@@ -65,12 +65,11 @@ export default class SignupForm extends PureComponent {
                         <b className="question">How many people you cook for?</b>
                          <hr className="hr1"/> 
                         <div className="buttons">
-                            <p> ADULT <button onClick={this.onClick2}> - </button> {this.state.adultsNumber}  <button onClick={this.onClick1}> + </button></p>
-                            <p> CHILDREN <button onClick={this.onClick4}> - </button> {this.state.childrenNumber} <button onClick={this.onClick3}> + </button></p> 
+                            <p> ADULT <button onClick={this.onClick2}> - </button> {this.state.adultsNumber}  <button onClick={this.onClick1}> + </button> </p>
+                            <p style={{marginTop: '20px'}}> CHILDREN <button onClick={this.onClick4}> - </button> {this.state.childrenNumber} <button onClick={this.onClick3}> + </button></p> 
                         </div>
                     </form>
-
-                    <b className="details">PERSONAL DETAILS</b>
+                    <b className="details" >PERSONAL DETAILS</b>
                      <hr className="hr2"/> 
                     <div className="form">
                     <form onSubmit={this.handleSubmit}>                    
@@ -85,7 +84,7 @@ export default class SignupForm extends PureComponent {
                             this.state.password !== this.state.confirmPassword &&
                             <p style={{ color: 'red' }}>The passwords do not match!</p>
                         }
-                        <button type="submit">CREATE MY ACCOUNT</button>                    
+                        <button type="submit" style={{marginTop: '40px'}}>CREATE MY ACCOUNT</button>                    
                     </form>
                 </div>
                 
