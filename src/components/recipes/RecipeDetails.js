@@ -17,7 +17,6 @@ import React from 'react';
 import './RecipeDetails.css'
 
 export default function RecipeDetails (props) {
-  console.log(props.recipe)
   if (props.recipe === null) return <h1>Loading ...</h1>
 
   return (
@@ -27,6 +26,7 @@ export default function RecipeDetails (props) {
         <i className="material-icons">star_border star_border star_border star_border star_border</i>
       </div>
       <div>
+        <button className="add-planner">ADD TO THE PLANNER</button>
         <button className="favorites">ADD TO FAVOURITE</button>
         <button className="shopping">ADD TO SHOPPING LIST</button>
       </div>
@@ -44,7 +44,7 @@ export default function RecipeDetails (props) {
           
         </div>
         <div className="image">
-          <img src={props.recipe.image} alt="meal" width='548px' />
+          <img src={props.recipe.image} alt="meal" width='548px'/>
         </div>
         <hr/>
       </div>
