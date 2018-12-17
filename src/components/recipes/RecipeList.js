@@ -99,8 +99,8 @@ export const RecipeList = (props) => {
                     return (
                         <li key={recipe.id} className='recipe'>
                             <img alt='meal' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQoE0L43jH6eh5DxXUaT7TPzIzjb2OcxiXyAcMFqIprusSCkCKw' width='200px' height='160px' />
-                            <h3 style={{ fontWeight: 'bold' }}>NAME OF THE MEAL</h3>
-                            <span>COOKING TIME</span><br></br>
+                            <h3 style={{ fontWeight: 'bold' }}>{recipe.name.toUpperCase()}</h3>
+                            <span>COOKING TIME: {recipe.cookingTime} MINUTES</span><br></br>
                             <i className="small material-icons">star_border star_border star_border star_border star_border</i><br></br>
                             <span>NUTRITION INFO</span><br></br>
                             <button className='change-button'>CHANGE</button>

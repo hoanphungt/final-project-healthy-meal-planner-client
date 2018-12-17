@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import RecipeDetails from './RecipeDetails';
 import { connect } from 'react-redux';
 import { loadRecipe } from '../../actions/recipes'
-
-// import Navbar from '../navbar/Navbar';
-// import { Newbar } from '../navbar/Newbar';
+import { Link } from 'react-router-dom'
 
 class RecipeDetailsContainer extends Component {
   componentDidMount() {
@@ -14,9 +12,8 @@ class RecipeDetailsContainer extends Component {
   render() { 
     return ( 
       <div>
-          {/* <Newbar />    */}
+        <Link to='/recipes'>Go Back</Link>
         <RecipeDetails recipe={this.props.recipe} /> 
-
       </div>
      );
   }

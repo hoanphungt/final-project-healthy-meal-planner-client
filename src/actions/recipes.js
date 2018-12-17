@@ -1,27 +1,28 @@
 import request from 'superagent'
 import {baseUrl} from '../constant'
 
+export const RECIPES_LOADED = 'RECIPES_LOADED'
 export const RECIPE_LOADED = 'RECIPE_LOADED'
+
+const recipesLoaded = (recipes) => ({
+    type: RECIPES_LOADED,
+    payload: recipes
+})
 
 const recipeLoaded = (recipe) => ({
     type: RECIPE_LOADED,
     recipe
 })
 
-// export const loadRecipe = (id) => (dispatch, getState) => {
-//     if (getState().planner) return
-
-//     if (!getState().currentUser) return alert('You need to login to see your recipes')
-//     const jwt = getState().currentUser.jwt
-
-//     request
-//         .get(`${baseUrl}/recipes/${id}`)
-//         .set('Authorization', `Bearer ${jwt}`)
-//         .then(response => {
-//             dispatch(recipeLoaded(response.body))
-//         })
-//         .catch(console.error)
-// }
+export const loadRecipes = () => (dispatch) => {
+  
+    request
+        .get(`${baseUrl}/recipes`)
+        .then(response => {
+            dispatch(recipesLoaded(response.body))
+        })
+        .catch(console.error)
+}
 
 export const loadRecipe = (id) => (dispatch) => {
   
