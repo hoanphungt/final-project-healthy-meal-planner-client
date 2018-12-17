@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux';
 import { PlannerList } from './PlannerList';
 import { loadPlanner } from '../../actions/planner'
+
 import './Planner.css'
 
 class PlannerListContainer extends React.Component {
@@ -17,7 +18,8 @@ class PlannerListContainer extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-    planner: state.planner
+    planner: state.planner,
+    user: state.user
 })
 
 export default connect(mapStateToProps, {loadPlanner})(PlannerListContainer) 
