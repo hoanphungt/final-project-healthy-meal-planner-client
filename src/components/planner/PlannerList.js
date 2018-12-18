@@ -16,7 +16,9 @@ export const PlannerList = (props) => {
                             <Link to={`./recipes/${day.recipe.id}`}><img alt='meal' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQoE0L43jH6eh5DxXUaT7TPzIzjb2OcxiXyAcMFqIprusSCkCKw' width='200px' height='160px' /></Link>
                             <h3 style={{ fontWeight: 'bold' }}>{day.recipe.name.toUpperCase()}</h3>
                             <span>COOKING TIME: {day.recipe.cookingTime} MINUTES</span><br></br>
-                            <i className="small material-icons">star_border star_border star_border star_border star_border</i><br></br>
+                            <div className="ratings">
+                                <i className="small material-icons">star_border star_border star_border star_border star_border</i><br></br>
+                            </div>
                             <button className='change-button'>CHANGE</button>
                             <button className='add-to-shopping-list-button' onClick={props.addToShoppingList}>ADD TO LIST</button>
                         </li>
