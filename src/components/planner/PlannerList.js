@@ -11,7 +11,7 @@ export const PlannerList = (props) => {
             <div><button className='button'>Add all to Shopping List</button></div>
             
             <ul className='planner-recipes'>
-                {props.planner.map(day => {
+                {props.planner.planner.map(day => {
                     return (
                         <li className='planner' key={day.id}>
                             <Link to={`./recipes/${day.recipe.id}`}><img alt='meal' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQoE0L43jH6eh5DxXUaT7TPzIzjb2OcxiXyAcMFqIprusSCkCKw' width='200px' height='160px'/></Link>
