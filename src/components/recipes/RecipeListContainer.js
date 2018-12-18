@@ -11,7 +11,6 @@ class RecipeListContainer extends React.Component {
     render() {
         return <div>
             <RecipeList recipes={this.props.recipes}/>
-            <button onClick={() => this.props.history.push('/logout')}>Logout</button>
         </div>
     }
 }

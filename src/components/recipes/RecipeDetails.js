@@ -20,7 +20,7 @@ export default function RecipeDetails(props) {
           <button className="shopping" onClick={props.addToShoppingList}>ADD TO SHOPPING LIST</button>
         </div>
         <div className='meal-information'>
-          <p>SERVES <b>{props.user.adultsNumber}</b><i className="material-icons">person</i> {''} <b>{props.user.childrenNumber}</b><i className="material-icons"> <span> person</span></i> </p>
+          <p>SERVES <b>{props.user.adultsNumber}</b><i className="material-icons">person</i> <b>{props.user.childrenNumber}</b><i className="material-icons"> <span> person</span></i> </p>
           <span><i className="material-icons">access_time</i>{props.recipe.cookingTime} MINUTES</span>
           <p>DIETARY OPTION: {props.recipe.dietary.toUpperCase()}</p>
           <p>ALLERGIES</p>
@@ -41,7 +41,7 @@ export default function RecipeDetails(props) {
 
       <ul className='ingredient-preparation'>
         <li className='ingredient'>
-          <div className='ingre-prep'><b>INGREDIENTS</b></div>
+          <div className='ingre-prep'><b className="caption">INGREDIENTS</b></div>
           {props.recipe.recipeIngredients.map(ingredient => {
             return <ul key={ingredient.id}>
               <li className='ingredient-list'>{ingredient.quantity * (props.user.adultsNumber + (0.5 * props.user.childrenNumber))} {ingredient.unit.name} {ingredient.ingredient.name}</li>
@@ -49,7 +49,7 @@ export default function RecipeDetails(props) {
           })}
         </li>
         <li className='preparation'>
-          <div className='ingre-prep'><b>PREPARATION STEPS</b></div>
+          <div className='ingre-prep'><b className="caption">PREPARATION STEPS</b></div>
           <ol>
             <li className='preparation-list'>{props.recipe.instructions}</li>
           </ol>          
