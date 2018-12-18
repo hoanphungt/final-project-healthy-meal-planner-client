@@ -3,12 +3,12 @@ import './ShoppingList.css'
 
 export const ShoppingList = (props) => {
   // if (props.shoppingList === null) return <h1>Add recipes to your shopping list</h1>
-
+ 
   return (
     <div className='shopping-list-container'>
       <h1 className='shopping-list-title'>MY SHOPPING LIST</h1>
       <button className='print-button' onClick={window.print}>PRINT SHOPPING LIST</button> 
-      <button className='clear-button'>CLEAR LIST</button>
+      <button className='clear-button' onClick={props.clearShoppingList}>CLEAR LIST</button>
 
       <ul className='shopping-list'>
         {props.shoppingList.map(ingredient => {
