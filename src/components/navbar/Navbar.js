@@ -13,7 +13,7 @@ class Navbar extends Component {
           <nav>
             <div className="nav-wrapper1">
               <Link to="/planner" className="brand-logo"><img src='images/logo.svg' alt='logo' className='logo-pic' /></Link>
-                <ul id="nav-mobile" className="right hide-on-med-and-down">
+                <ul className='bar'>
                   <li><Link to={'/planner'}>WEEKLY PLANNER</Link></li>
                   <li><Link to={'/recipes'}>SEARCH</Link></li>
                   <li><Link to={'/favorites'}>FAVORITES</Link></li>
