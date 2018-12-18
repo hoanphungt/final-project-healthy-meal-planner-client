@@ -12,24 +12,24 @@ const NavBar = (props) => {
     <div>
       <nav>
         <div className="nav-wrapper1">
-          <a href="/planner" className="brand-logo"><i className="material-icons">restaurant_menu</i>MealPlanner</a>
+          <Link to="/planner" className="brand-logo"><img src='images/logo.svg' alt='logo' className='logo-pic' /></Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
 
-            <li> <Link to={'/planner'}>YOUR WEEKLY PLANNER</Link></li>
-            <li> <Link to={'/recipes'}>SEARCH</Link></li>
-            <li> <Link to={'/shopping-list'}>SHOPPING LIST</Link></li>
-            
-            <li><a href="/favorites">FAVORITES</a></li>
-            <li><a href="/create">CREATE YOUR OWN</a></li>
-            <li><a href="/blog">BLOG</a></li>
+            <li><Link to={'/planner'}>WEEKLY PLANNER</Link></li>
+            <li><Link to={'/recipes'}>SEARCH</Link></li>
+            <li><Link to={'/favorites'}>FAVORITES</Link></li>
+            <li><Link to={'/favorites'}>CREATE YOUR OWN</Link></li>
+            <li><Link to={'/favorites'}>BLOG</Link></li>
+            <li> <Link to={'/shopping-list'}><img src='images/shoppinglist.svg' alt='shopping-list' /></Link></li>
+            <li><img src='images/Avatar.svg' alt='avatar' /></li>
             {/* <button onClick={() => history.push('/login')}>Login</button>
     
             <button onClick={() => history.push('/signup')}>Sign up</button> */}
-        </ul>
-        <input className="search-box" type="box" placeholder="SEARCHBAR" />
-        <button className="search-button">Search</button>
+          </ul>
+          <input className="search-box" type="box" placeholder="SEARCHBAR" />
+          <button className="search-button">Search</button>
         </div>
-    </nav>
+      </nav>
     </div>
   )
 }
