@@ -6,12 +6,12 @@ export const PlannerList = (props) => {
 
     return (
         <div className='planner'>
-            <h1 className='planner-list'>YOUR WEEKLY PLANNER</h1>
+            <h1 className='planner-title'>YOUR WEEKLY PLANNER</h1>
             <ul><li>BREAKFAST</li><li>LUNCH</li><li style={{fontWeight: 'bold'}}>DINNER</li><li>SNACK</li></ul>
             <div><button className='button'>Add all to Shopping List</button></div>
-            <ul>
-                {/*added planner.days below, in front of map, to fix error*/ }
-                {props.planner.days.map(day => {
+            
+            <ul className='planner-recipes'>
+                {props.planner.map(day => {
                     return (
                         <li className='planner' key={day.id}>
                             <Link to={`./recipes/${day.recipe.id}`}><img alt='meal' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQoE0L43jH6eh5DxXUaT7TPzIzjb2OcxiXyAcMFqIprusSCkCKw' width='200px' height='160px'/></Link>

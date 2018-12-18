@@ -62,16 +62,15 @@ export default class SignupForm extends PureComponent {
                 </div>
 
                     <form onClick={this.handleClick} >
-                        <b className="question">How many people you cook for?</b>
-                         <hr className="hr1"/> 
+                        <b className="question">How many people do you cook for?</b>
+                        <hr className="hr1"/> 
                         <div className="buttons">
-                            <p> ADULT <button onClick={this.onClick2}> - </button> {this.state.adultsNumber}  <button onClick={this.onClick1}> + </button></p>
-                            <p> CHILDREN <button onClick={this.onClick4}> - </button> {this.state.childrenNumber} <button onClick={this.onClick3}> + </button></p> 
+                            <span className='adult-button'> Adult <button onClick={this.onClick2} style={{marginLeft: '20px'}}> - </button> {this.state.adultsNumber}  <button onClick={this.onClick1}> + </button> </span>
+                            <span className='child-button'> Children <button onClick={this.onClick4} style={{marginLeft: '20px'}}> - </button> {this.state.childrenNumber} <button onClick={this.onClick3}> + </button></span> 
                         </div>
                     </form>
-
-                    <b className="details">PERSONAL DETAILS</b>
-                     <hr className="hr2"/> 
+                    <b className="details" >PERSONAL DETAILS</b>
+                    <hr className="hr2"/> 
                     <div className="form">
                     <form onSubmit={this.handleSubmit}>                    
                         <label>First name:<input type="text" name="firstName" value={this.state.firstName || ''} onChange={this.handleChange} /> </label>
@@ -85,7 +84,7 @@ export default class SignupForm extends PureComponent {
                             this.state.password !== this.state.confirmPassword &&
                             <p style={{ color: 'red' }}>The passwords do not match!</p>
                         }
-                        <button type="submit">CREATE MY ACCOUNT</button>                    
+                        <button type="submit" style={{marginTop: '40px'}}>CREATE MY ACCOUNT</button>                    
                     </form>
                 </div>
                 

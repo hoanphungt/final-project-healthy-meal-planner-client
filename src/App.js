@@ -20,7 +20,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-           <header>
+           <header className="App-header">
             <Navbar />
           </header>    
           <main className='container'>

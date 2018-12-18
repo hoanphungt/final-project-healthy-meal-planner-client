@@ -23,13 +23,13 @@ const NavBar = (props) => {
             <li><a href="/create">CREATE YOUR OWN</a></li>
             <li><a href="/blog">BLOG</a></li>
             {/* <button onClick={() => history.push('/login')}>Login</button>
+    
             <button onClick={() => history.push('/signup')}>Sign up</button> */}
-            
-          </ul>
-          <input className="search-box" type="box" placeholder="SEARCHBAR"/>
-                    <button className ="search-button">Search</button> 
+        </ul>
+        <input className="search-box" type="box" placeholder="SEARCHBAR" />
+        <button className="search-button">Search</button>
         </div>
-      </nav>
+    </nav>
     </div>
   )
 }

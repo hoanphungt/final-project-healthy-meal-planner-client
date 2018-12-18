@@ -1,3 +1,52 @@
 .login {
-    margin-top: 180px
+    text-align: center;
+    margin-top: 2%;
+    width: 100%
+}
+
+.login h1 {
+    text-align: center;
+    font-family: 'Dosis';
+    font-size: 30px;
+    font-weight: bold
+}
+
+.email {
+    width: 30%;
+    height: 60px;
+    border-radius: 20px;
+    padding-left: 20px;
+    border-color: black
+}
+
+.password {
+    width: 30%;
+    height: 60px;
+    border-radius: 20px;
+    padding-left: 20px;
+    border-color: black;
+    margin-top: 20px
+}
+
+.login-button {
+    width: 12%;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 44px;
+    background-color: #339989;
+    color: white;
+    font-family: 'Dosis';
+    font-size: 18px;
+    font-weight: bold
+}
+
+.user-box {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    text-align: left;
+    font-family: 'Avenir Next';
+    font-size: 14px;
+    line-height: 3
 }
