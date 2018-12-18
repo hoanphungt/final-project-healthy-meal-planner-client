@@ -14,14 +14,10 @@ class PlannerListContainer extends React.Component {
 
     addAllToShoppingListHandler = () => {
         const household = this.props.user.adultsNumber + this.props.user.childrenNumber / 2
-        console.log(household, "yelp")
-        //make an array with all the recipes 
-        //call the addtoshoppinglist func for each recipe
         const allRecipesArr = this.props.planner.planner.map(plannerItem => plannerItem.recipe)
         console.log(allRecipesArr, "yolo")
         
         allRecipesArr.map(recipe => this.props.addToShoppingList(recipe, household))
-        // this.props.addToShoppingList(this.props.recipe, household)
       }
 
     render() {
