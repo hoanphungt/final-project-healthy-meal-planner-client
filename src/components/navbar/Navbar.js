@@ -13,13 +13,13 @@ class Navbar extends Component {
           <div className="nav-wrapper1">
             <Link to="/planner" className="brand-logo"><img src='images/logo.svg' alt='logo' className='logo-pic' /></Link>
             <ul className='bar'>
-              <li><Link to={'/planner'}>WEEKLY PLANNER</Link></li>
-              <li><Link to={'/recipes'}>SEARCH</Link></li>
-              <li><Link to={'/favorites'}>FAVORITES</Link></li>
-              <li><Link to={'/favorites'}>CREATE YOUR OWN</Link></li>
-              <li><Link to={'/favorites'}>BLOG</Link></li>
-              <li> <Link to={'/shopping-list'}><img src='images/shoppinglist.svg' alt='shopping-list' /></Link></li>
-              <li><img src='images/Avatar.svg' alt='avatar' /></li>
+              <li><Link to='/planner'>WEEKLY PLANNER</Link></li>
+              <li><Link to='/recipes'>SEARCH</Link></li>
+              <li><Link to='/favorites'>FAVORITES</Link></li>
+              <li><Link to='/favorites'>CREATE YOUR OWN</Link></li>
+              <li><Link to='/favorites'>BLOG</Link></li>
+              <li> <Link to='/shopping-list'><img src='images/shoppinglist.svg' alt='shopping-list' /></Link></li>
+              <li><Link to='/logout'><img src='images/Avatar.svg' alt='avatar' /></Link></li>
             </ul>
             <input className="search-box" type="box" placeholder="SEARCHBAR" />
             <button className="search-button">Search</button>
