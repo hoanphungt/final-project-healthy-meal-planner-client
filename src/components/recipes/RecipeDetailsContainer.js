@@ -8,6 +8,7 @@ import { addToShoppingList } from '../../actions/shoppingList'
 class RecipeDetailsContainer extends Component {
   componentDidMount() {
     this.props.loadRecipe(Number(this.props.match.params.id))
+    this.props.loadUser()
   }
 
   state = {  }
