@@ -28,6 +28,10 @@ export const PlannerList = (props) => {
                     <a className="btn-floating btn-large" href='/recipes'><i className="material-icons">add</i></a>
                 </li>
             </ul>
+
+
+              <button type="submit" onClick={ () => {props.onClick({offset : props.offset-7})} } > Previous </button>
+  <button type="submit" onClick={ () => {props.onClick({offset : props.offset+7})} } > Next </button>
         </div>
     )
 }
