@@ -7,6 +7,7 @@ export default function RecipeDetails(props) {
   if (props.recipe === null || props.user === null) return <h1>Loading ...</h1>
 
   return (
+
     <div className='meal-details' key={props.recipe.id}>
       <div className='left-image'>
         <b className="meal"> {props.recipe.name.toUpperCase()}</b>
@@ -16,7 +17,7 @@ export default function RecipeDetails(props) {
         <div>
           <button className="add-planner">ADD TO THE PLANNER</button>
           <button className="favorites">ADD TO FAVOURITE</button>
-          <button className="shopping">ADD TO SHOPPING LIST</button>
+          <button className="shopping" onClick={props.addToShoppingList}>ADD TO SHOPPING LIST</button>
         </div>
         <div className='meal-information'>
           <p>SERVES <b>{props.user.adultsNumber}</b><i className="material-icons">person</i> {''} <b>{props.user.childrenNumber}</b><i className="material-icons"> <span> person</span></i> </p>

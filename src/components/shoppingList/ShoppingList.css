@@ -1,0 +1,19 @@
+li.shopping-list-ingredient {
+  position: relative;
+  display: inline;
+  list-style: none;
+  text-align: left;
+  vertical-align: top;
+}
+
+div.shopping-list-container {
+  width: 800px;
+  margin-top: 14%
+}
+
+h1.shopping-list-title {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 14%
+}

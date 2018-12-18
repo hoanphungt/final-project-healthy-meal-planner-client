@@ -9,6 +9,7 @@ export const PlannerList = (props) => {
             <h1 className='planner-title'>YOUR WEEKLY PLANNER</h1>
             <ul><li>BREAKFAST</li><li>LUNCH</li><li style={{fontWeight: 'bold'}}>DINNER</li><li>SNACK</li></ul>
             <div><button className='button'>Add all to Shopping List</button></div>
+            
             <ul className='planner-recipes'>
                 {props.planner.map(day => {
                     return (
