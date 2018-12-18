@@ -11,14 +11,14 @@ class RecipeDetailsContainer extends Component {
     this.props.loadUser()
   }
 
-  state = {  }
+  state = {}
   addToShoppingListHandler = () => {
     const household = this.props.user.adultsNumber + this.props.user.childrenNumber / 2
     this.props.addToShoppingList(this.props.recipe, household)
   }
 
-  render() { 
-    return ( 
+  render() {
+    return (
       <div className='recipe-details'>
         <div className='go-back-button' onClick={() => {this.props.history.push('/recipes')}}> <span className="go-back"><div className="material-icons">chevron_left</div>Go Back</span></div>
         <RecipeDetails recipe={this.props.recipe} user={this.props.user} addToShoppingList={this.addToShoppingListHandler} />
