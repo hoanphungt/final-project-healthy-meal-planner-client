@@ -8,6 +8,8 @@ export const Newbar = () => {
     return (
             <nav className="nav-wrapper2">
               <ul>
+                <Link to="/planner" className="brand-logo"><img src='images/logo.svg' alt='logo' className='logo-pic' /></Link>
+
                 <li className="nav">HOW IT WORKS</li>
                 <li className="nav">ABOUT US</li>
                 <li className="nav">FAQ</li>

@@ -23,7 +23,7 @@ class RecipeDetailsContainer extends Component {
   render() { 
     return ( 
       <div className='recipe-details'>
-        <button className='go-back-button' onClick={() => {this.props.history.push('/recipes')}}>Go Back</button>
+        <span className='go-back-button' onClick={() => {this.props.history.push('/recipes')}}> <div className="material-icons">chevron_left</div>Go Back</span>
         <RecipeDetails recipe={this.props.recipe} user={this.props.user} addToShoppingList={this.addToShoppingListHandler} />
       </div>
     );
