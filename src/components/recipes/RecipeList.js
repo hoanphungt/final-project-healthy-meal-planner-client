@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './RecipeList.css'
 
 export const RecipeList = (props) => {
@@ -98,7 +98,7 @@ export const RecipeList = (props) => {
                 {props.recipes.map(recipe => {
                     return (
                         <li key={recipe.id} className='recipe'>
-                            <img alt='meal' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQoE0L43jH6eh5DxXUaT7TPzIzjb2OcxiXyAcMFqIprusSCkCKw' width='200px' height='160px' />
+                            <Link to={`./recipes/${recipe.id}`}><img alt='meal' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQoE0L43jH6eh5DxXUaT7TPzIzjb2OcxiXyAcMFqIprusSCkCKw' width='200px' height='160px' /></Link>
                             <h3 style={{ fontWeight: 'bold' }}>{recipe.name.toUpperCase()}</h3>
                             <span>COOKING TIME: {recipe.cookingTime} MINUTES</span><br></br>
                             <i className="small material-icons">star_border star_border star_border star_border star_border</i><br></br>

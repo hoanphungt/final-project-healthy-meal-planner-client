@@ -1,5 +1,5 @@
 .row {
-    margin-top: 2%;
+    margin-top: 0%;
     width: 100%
 }
 
@@ -37,7 +37,7 @@ li.recipe {
     text-align: left;
     height: auto;
     background-color: white;
-    margin: 20px 40px 20px 0px;
+    margin: 0px 40px 20px 0px;
     width: 100%
 }
 
