@@ -1,55 +1,22 @@
 import React from 'react'
-// import { withRouter } from 'react-router'
-// import { userId } from '../jwt'
-// import { connect } from 'react-redux'
 import './Newbar.css'
+import { Link } from 'react-router-dom'
 
 
-export const Newbar = () =>{
+export const Newbar = () => {
 
     return (
-            <navbar>
+            <nav className="nav-wrapper2">
               <ul>
-                <li className="nav"><a href="url">SHOPPING LIST</a></li>
-                <li className="nav"><a href="url">BLOG</a></li>
-                <li className="nav"><a href="url">CREATE YOUR OWN</a></li>
-                <li className="nav"><a href="url">FAVORITES</a></li>
-                <li className="nav"><a href="url">SEARCH</a></li>
-                <li className="nav"><a href="url">YOUR WEEKLY PLANNER</a></li>
+                <li className="nav"><a href="url">HOW IT WORKS</a></li>
+                <li className="nav"><a href="url">ABOUT US</a></li>
+                <li className="nav"><a href="url">FAQ</a></li>
+                <li className="nav"><a href="url">CONTACT</a></li>
+                <button className="signup"><Link to={'/signup'}>SIGN UP</Link></button>
+                <button className="login1"><Link to ={'/login'}>LOGIN</Link></button>
               </ul>
               
-            </navbar>
-
-
-          
-          
-        
-        
+            </nav>
       )
     }
 
-
-    /* <nav>
-      <div className="nav-wrapper">
-              <a href="/planner" className="brand-logo"><i className="material-icons">restaurant_menu</i>MealPlanner</a>
-
-            <ul id="nav-mobile" className="right hide-on-med-and-down">
-          <h1>HELLO</h1>
-  
-  <li><a href="#">YOUR WEEKLY PLANNER</a></li>
-  <li><a href="#">SEARCH</a></li>
-  <li><a href="#">FAVORITES</a></li>
-  <li><a href="#">CREATE YOUR OWN</a></li>
-  <li><a href="#">BLOG</a></li>
-  <li><a href="#">SHOPPING LIST</a></li>
-  {/* <button onClick={() => history.push('/login')}>Login</button> */
-  /* <button onClick={() => history.push('/signup')}>Sign up</button> 
-
-</ul>
-              
-
-              
-            </div>
-              </nav> */
-    
-    

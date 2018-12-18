@@ -26,3 +26,61 @@ color: #023C40;
 
 
 } */
+
+.nav-wrapper2{
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  top: 0px;
+  background: white;
+  position: relative;
+} 
+
+.nav-wrapper2 li a {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 27px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #023C40;
+}
+
+  
+.signup {
+  background-color: #339989;
+  border-radius: 48px;
+  height: 58px;
+  width: 12%;
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase
+}
+.signup a{
+  color: #E0E0E0
+
+}
+
+.login1 {
+  background-color: white;
+  border-radius: 48px;
+  height: 58px;
+  width: 12%;
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: bold;
+  line-height: 26px;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 9px
+}
+
+.login1 a {
+  color: #339989;
+
+}

@@ -10,14 +10,14 @@ import LogoutPage from './components/logout/LogoutPage';
 import SignupFormContainer from './components/signup/SignupFormContainer';
 import { Footer } from './components/footer/Footer';
 import './App.css'
-import Navbar from './components/navbar/Navbar'
+import Navbar  from './components/navbar/Navbar'
 
 
 
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
+      <Provider store = {store}>
         <div className="App">
            <header className="App-header">
             <Navbar />
@@ -36,6 +36,7 @@ class App extends Component {
           </footer>  
         </div>
       </Provider>
+
     );
   }
 }
