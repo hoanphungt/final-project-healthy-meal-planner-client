@@ -26,7 +26,6 @@ class ShoppingListContainer extends React.Component {
 
     return <div>
       <ShoppingList shoppingList={Object.values(this.props.shoppingList)} clearShoppingList={this.clearShoppingListHandler} />
-      <button onClick={() => this.props.history.push('/logout')}>Logout</button>
     </div>
   }
 }

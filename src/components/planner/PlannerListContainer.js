@@ -15,14 +15,12 @@ class PlannerListContainer extends React.Component {
     addAllToShoppingListHandler = () => {
         const household = this.props.user.adultsNumber + this.props.user.childrenNumber / 2
         const allRecipesArr = this.props.planner.planner.map(plannerItem => plannerItem.recipe)
-        console.log(allRecipesArr, "yolo")
-        
         allRecipesArr.map(recipe => this.props.addToShoppingList(recipe, household))
-      }
+    }
 
     render() {
         return (<div className='planner-list'>
-            <PlannerList planner={this.props.planner} addAllToShoppingList={this.addAllToShoppingListHandler}/>
+            <PlannerList planner={this.props.planner} addAllToShoppingList={this.addAllToShoppingListHandler} />
         </div>)
     }
 }
@@ -32,4 +30,4 @@ const mapStateToProps = (state) => ({
     user: state.user
 })
 
-export default connect(mapStateToProps, {loadPlanner, loadUser, addToShoppingList })(PlannerListContainer) 
+export default connect(mapStateToProps, { loadPlanner, loadUser, addToShoppingList })(PlannerListContainer) 

@@ -102,7 +102,6 @@ export const RecipeList = (props) => {
                             <h3 style={{ fontWeight: 'bold' }}>{recipe.name.toUpperCase()}</h3>
                             <span>COOKING TIME: {recipe.cookingTime} MINUTES</span><br></br>
                             <i className="small material-icons">star_border star_border star_border star_border star_border</i><br></br>
-                            <span>NUTRITION INFO</span><br></br>
                             <button className='change-button'>CHANGE</button>
                             <button className='add-to-shopping-list-button'>ADD TO LIST</button>
                         </li>

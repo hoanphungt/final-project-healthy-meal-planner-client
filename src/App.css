@@ -1,7 +1,8 @@
 .App-footer {
-  font-size: 18px;
+  font-family: 'Dosis';
+  font-size: 19px;
   font-weight: bold;
-  background: #999999;
+  background: #023C40;
   padding: 60px 0 0 100px;
   color: white;
   width: 100%;
@@ -26,9 +27,4 @@ body, input {
 * {
   margin: 0;
   padding: 0;
-}
-
-.App-header {
-  width: 100%;
-  height: 220px;
 }
