@@ -34,14 +34,10 @@ class PlannerListContainer extends React.Component {
 
     render() {
         return (<div className='planner-list'>
-<<<<<<< HEAD
             <PlannerList planner={this.props.planner} addAllToShoppingList={this.addAllToShoppingListHandler}
               onClick={this.onClick}
               offset={this.state.offset}
             />
-=======
-            <PlannerList planner={this.props.planner} addAllToShoppingList={this.addAllToShoppingListHandler} />
->>>>>>> d6af45d920e05f5bb90e70e7167ea5485a882ce0
         </div>)
     }
 }
