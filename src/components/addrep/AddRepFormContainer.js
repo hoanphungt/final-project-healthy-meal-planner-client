@@ -2,15 +2,13 @@ import React from 'react'
 import { AddRepForm } from './AddRepForm'
 import { connect } from 'react-redux'
 import { createRecipe } from '../../actions/recipe'
-import { Redirect } from 'react-router-dom'
-// import './Login.css'
 
 class AddRepFormContainer extends React.Component {
     state= {
             //recipe entity
             name :'',
             image :'',
-            cookingTime :0 ,
+            cookingTime :'',
             instructions :'',
             diffLevel : '',
             season :'',
@@ -35,7 +33,7 @@ class AddRepFormContainer extends React.Component {
 
   onChange = (event) => {
     this.setState({
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     })
   }
 

@@ -12,13 +12,13 @@ export const AddRepForm = (props) => {
                 <input type="box" placeholder="season" name='season' onChange={onChange} value={values.season}/>
 
                 <input type="box" placeholder="cookingTime" name='cookingTime' onChange={onChange} value={values.cookingTime}/>
-                <input type="box" placeholder="ingredient" name='ingredient' onChange={onChange} value={values.ingredient[0]}/>
-                <input type="box" placeholder="unit" name='unit' onChange={onChange} value={values.unit[0]}/>
-                <input type="box" placeholder="recipeIngredients" name='recipeIngredients' onChange={onChange} value={values.recipeIngredients[0]}/>
+                <input type="box" placeholder="ingredient" name='ingredient[0]' onChange={onChange} value={values.ingredient[0]}/>
+                <input type="box" placeholder="unit" name='unit[0]' onChange={onChange} value={values.unit[0]}/>
+                <input type="box" placeholder="recipeIngredients" name='recipeIngredients[0]' onChange={onChange} value={values.recipeIngredients[0]}/>
 
-                <input type="box" placeholder="ingredient" name='ingredient' onChange={onChange} value={values.ingredient[1]}/>
-                <input type="box" placeholder="unit" name='unit' onChange={onChange} value={values.unit[1]}/>
-                <input type="box" placeholder="recipeIngredients" name='recipeIngredients' onChange={onChange} value={values.recipeIngredients[1]}/>
+                <input type="box" placeholder="ingredient" name='ingredient[1]' onChange={onChange} value={values.ingredient[1]}/>
+                <input type="box" placeholder="unit" name='unit[1]' onChange={onChange} value={values.unit[1]}/>
+                <input type="box" placeholder="recipeIngredients" name='recipeIngredients[1]' onChange={onChange} value={values.recipeIngredients[1]}/>
                 <button type='submit'>SUBMIT</button>
               
             </form>
