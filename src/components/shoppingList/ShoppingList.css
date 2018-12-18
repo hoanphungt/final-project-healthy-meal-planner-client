@@ -4,11 +4,19 @@ li.shopping-list-ingredient {
   list-style: none;
   text-align: left;
   vertical-align: top;
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: bold;
+  line-height: 27px;
+  font-size: 25px;
+  text-transform: uppercase;
+
+color: #023C40;
 }
 
 div.shopping-list-container {
   width: 50%;
-  margin-top: 14%
+  margin-left: 14% 
 }
 
 h1.shopping-list-title {
@@ -16,4 +24,29 @@ h1.shopping-list-title {
   font-size: 30px;
   font-weight: bold;
   margin-top: 14%
+}
+
+.print-button{
+  width: 20%;
+  height: 53px;
+  border-radius: 50px;
+  font-family: 'Dosis';
+  margin-left: 22px;
+  font-weight: bold;
+  font-size:12px;
+  background-color: #339989;
+  color: white
+}
+
+.clear-button{
+  width: 20%;
+  height: 53px;
+  border-radius: 50px;
+  font-family: 'Dosis';
+  margin-left: 22px;
+  font-weight: bold;
+  font-size:12px;
+  background-color: #339989;
+  color: white
+
 }

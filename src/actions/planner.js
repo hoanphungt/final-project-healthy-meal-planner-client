@@ -4,7 +4,7 @@ import {baseUrl} from '../constant'
 export const PLANNER_LOADED = 'PLANNER_LOADED'
 
 const plannerLoaded = (planner) => ({
-    type: 'PLANNER_LOADED',
+    type: PLANNER_LOADED,
     payload: planner
 })
 

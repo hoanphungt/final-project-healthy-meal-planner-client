@@ -4,11 +4,23 @@
   top: 20px
 }
 
-.go-back-button {
+/* .go-back-button {
   width: 8%;
-  height: 0px;
+  height: px;
   position: relative;
   margin-left: 6%;
+} */
+
+.go-back{
+  font-family: 'Dosis';
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 22px;
+  color: #023C40;
+  cursor: pointer;
+  margin-left: 5%;
+  letter-spacing: -2.5%
+
 }
 
 .meal-details {
@@ -26,24 +38,36 @@
 .add-planner{
   width: 20%;
   height: 53px;
-  border-radius: 20px;
-  font-size:9px;
+  border-radius: 50px;
+  font-family: 'Dosis';
+  font-weight: bold;
+  font-size:12px;
+  background-color: #7CC91E;
+  color: white
 }
 
 .favorites{
   width: 20%;
   height: 53px;
-  border-radius: 20px;
-  font-size:9px;  
+  border-radius: 50px;
+  font-family: 'Dosis';
   margin-left: 22px;
+  font-weight: bold;
+  font-size:12px;
+  background-color: #339989;
+  color: white
 }
 
 .shopping{
   width: 20%;
   height: 53px;
-  border-radius: 20px;
-  font-size:9px;
-  margin-left: 22px;  
+  border-radius: 50px;
+  font-family: 'Dosis';
+  margin-left: 22px;
+  font-weight: bold;
+  font-size:12px;
+  background-color: #339989;
+  color: white
 }
 
 .left-image {
@@ -71,7 +95,8 @@
   border-radius: 10px;
   margin-right: 16px;
   margin-top: 23px;
-  font-size: 14px
+  font-size: 14px;
+  border-color: #339989;
 }
 
 .ingredient-preparation {
@@ -110,4 +135,8 @@ b {
 
 .ingre-prep {
   margin-bottom: 20px
+}
+
+.caption{
+  color: #023C40
 }
