@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export const PlannerList = (props) => {
-    if (props.planner === null) return <h1>Loading ...</h1>
+  if (props.planner === null) return <h1>Loading ...</h1>
 
     return (
         <div className='planner'>
@@ -18,7 +18,7 @@ export const PlannerList = (props) => {
                             <span>COOKING TIME: {day.recipe.cookingTime} MINUTES</span><br></br>
                             <i className="small material-icons">star_border star_border star_border star_border star_border</i><br></br>
                             <button className='change-button'>CHANGE</button>
-                            <button className='add-to-shopping-list-button' onClick={props.addToShoppingList}>ADD TO LIST</button>
+                            <button className='add-to-shopping-list-button' onClick={() => props.addToShoppingList(day.recipe)}>ADD TO LIST</button>
                         </li>
                     )
                 })}

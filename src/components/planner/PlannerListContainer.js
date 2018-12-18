@@ -30,21 +30,27 @@ class PlannerListContainer extends React.Component {
     })
   }
 
-
+    addToShoppingListHandler = (recipe) => {
+      const household = this.props.user.adultsNumber + this.props.user.childrenNumber / 2
+      this.props.addToShoppingList(recipe, household)
+    }
 
     render() {
         return (<div className='planner-list'>
-            <PlannerList planner={this.props.planner} addAllToShoppingList={this.addAllToShoppingListHandler}
+             <PlannerList planner={this.props.planner} 
+              addAllToShoppingList={this.addAllToShoppingListHandler}
+              addToShoppingList={this.addToShoppingListHandler}
               onClick={this.onClick}
               offset={this.state.offset}
-            />
+               />
         </div>)
     }
 }
 
 const mapStateToProps = (state) => ({
-    planner: state.planner,
-    user: state.user
+  planner: state.planner,
+  user: state.user
 })
 
 export default connect(mapStateToProps, { loadPlanner, loadUser, addToShoppingList })(PlannerListContainer) 
+
