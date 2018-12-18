@@ -25,8 +25,8 @@ class AddRepFormContainer extends React.Component {
             recipeIngredients : []
             //quantity,
           } 
-  onSubmit = (event) => {
-    event.preventDefault()
+  onSubmit = () => {
+    // event.preventDefault()
     this.props.createRecipe(this.state)
     console.log(this.state)
   }
@@ -37,10 +37,18 @@ class AddRepFormContainer extends React.Component {
     })
   }
 
+
+  onChange2 = (event) => {
+  //  this.setState({
+       this.state[event.target.name].push(event.target.value)
+      // [event.target.name] : event.target.value
+  //  })
+  }
+
   render() {
 
     return (<div className='login'>
-      <AddRepForm onSubmit={this.onSubmit} onChange={this.onChange} values={this.state} />
+      <AddRepForm onSubmit={this.onSubmit} onChange={this.onChange} onChange2={this.onChange2} values={this.state} />
       <p style={{color:"red"}}>{this.props.error}</p>
     </div>)
   }
