@@ -6,6 +6,14 @@ li.shopping-list-ingredient {
   vertical-align: top;
 }
 
-.shopping-list-container {
+div.shopping-list-container {
   width: 800px;
+  margin-top: 14%
+}
+
+h1.shopping-list-title {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 14%
 }

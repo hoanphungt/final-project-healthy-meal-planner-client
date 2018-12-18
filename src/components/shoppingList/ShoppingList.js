@@ -6,7 +6,7 @@ export const ShoppingList = (props) => {
 
   return (
     <div className='shopping-list-container'>
-      <h1>MY SHOPPING LIST</h1>
+      <h1 className='shopping-list-title'>MY SHOPPING LIST</h1>
       <button className='print-button' onClick={window.print}>PRINT SHOPPING LIST</button> 
       <button className='clear-button'>CLEAR LIST</button>
 
