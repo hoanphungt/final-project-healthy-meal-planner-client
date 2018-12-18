@@ -7,6 +7,11 @@ import './Planner.css'
 import { addToShoppingList } from '../../actions/shoppingList'
 
 class PlannerListContainer extends React.Component {
+
+    state = {
+        offset : 0 
+        }
+
     componentDidMount() {
         this.props.loadPlanner()
         this.props.loadUser()
@@ -24,9 +29,21 @@ class PlannerListContainer extends React.Component {
         // this.props.addToShoppingList(this.props.recipe, household)
       }
 
+      onClick = (data) => {
+    this.props.loadPlanner(data.offset)
+    this.setState({
+     offset : data.offset
+    })
+  }
+
+
+
     render() {
         return (<div className='planner-list'>
-            <PlannerList planner={this.props.planner} addAllToShoppingList={this.addAllToShoppingListHandler}/>
+            <PlannerList planner={this.props.planner} addAllToShoppingList={this.addAllToShoppingListHandler}
+              onClick={this.onClick}
+              offset={this.state.offset}
+            />
         </div>)
     }
 }
