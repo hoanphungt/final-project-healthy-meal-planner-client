@@ -1,14 +1,15 @@
 .planner-list {
     width: 100%;
+    margin-left: 6%
 }
 
 h1.planner-title {
-    text-align: center;
     font-family: 'Dosis';
     font-size: 36px;
     font-weight: bold;
     margin-top: 2%;
     color: #023C40;
+    margin-left: 26%
 }
 
 ul.meal-time li {

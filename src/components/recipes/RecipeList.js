@@ -101,7 +101,10 @@ export const RecipeList = (props) => {
                             <Link to={`./recipes/${recipe.id}`}><img alt='meal' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQoE0L43jH6eh5DxXUaT7TPzIzjb2OcxiXyAcMFqIprusSCkCKw' width='200px' height='160px' /></Link>
                             <h3 style={{ fontWeight: 'bold' }}>{recipe.name.toUpperCase()}</h3>
                             <span>COOKING TIME: {recipe.cookingTime} MINUTES</span><br></br>
+                            <div className="ratings">
+
                             <i className="small material-icons">star_border star_border star_border star_border star_border</i><br></br>
+                            </div>
                             <button className='change-button'>CHANGE</button>
                             <button className='add-to-shopping-list-button'>ADD TO LIST</button>
                         </li>
