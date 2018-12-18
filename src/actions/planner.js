@@ -8,6 +8,11 @@ const plannerLoaded = (planner) => ({
     payload: planner
 })
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d6af45d920e05f5bb90e70e7167ea5485a882ce0
 export const loadPlanner = (offset) => (dispatch, getState) => {
    // if (getState().planner) return
 

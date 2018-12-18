@@ -1,45 +1,42 @@
-import React from 'react'
-import { withRouter } from 'react-router'
-// import { userId } from '../jwt'
-import { connect } from 'react-redux'
+import React, { Component } from 'react'
 import './Navbar.css'
+import { connect } from 'react-redux';
+import { Newbar } from './Newbar';
 import { Link } from 'react-router-dom'
 
-const NavBar = (props) => {
+class Navbar extends Component {
+  render() {
+    return (
+      <div>
+        {this.props.user === null && <Newbar />}
+        {this.props.user !== null &&
+          <div className="nav-wrapper1">
+            <Link to="/planner" className="brand-logo"><img src='images/logo.svg' alt='logo' className='logo-pic' /></Link>
+            <ul className='bar'>
+              <li><Link to='/planner'>WEEKLY PLANNER</Link></li>
+              <li><Link to='/recipes'>SEARCH</Link></li>
+              <li><Link to='/favorites'>FAVORITES</Link></li>
+              <li><Link to='/favorites'>CREATE YOUR OWN</Link></li>
+              <li><Link to='/favorites'>BLOG</Link></li>
+              <li> <Link to='/shopping-list'><img src='images/shoppinglist.svg' alt='shopping-list' /></Link></li>
+              <li><Link to='/logout'><img src='images/Avatar.svg' alt='avatar' /></Link></li>
+            </ul>
+            <input className="search-box" type="box" placeholder="SEARCHBAR" />
+            <button className="search-button">Search</button>
+          </div>
+        }
+      </div>
 
-  // const { history } = props
-  return (
-    <div>
-      <nav>
-        <div className="nav-wrapper1">
-          <a href="/planner" className="brand-logo"><i className="material-icons">restaurant_menu</i>MealPlanner</a>
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
-
-            <li> <Link to={'/planner'}>YOUR WEEKLY PLANNER</Link></li>
-            <li> <Link to={'/recipes'}>SEARCH</Link></li>
-            <li> <Link to={'/shopping-list'}>SHOPPING LIST</Link></li>
-            
-            <li><a href="/favorites">FAVORITES</a></li>
-            <li><a href="/create">CREATE YOUR OWN</a></li>
-            <li><a href="/blog">BLOG</a></li>
-            {/* <button onClick={() => history.push('/login')}>Login</button>
-    
-            <button onClick={() => history.push('/signup')}>Sign up</button> */}
-        </ul>
-        <input className="search-box" type="box" placeholder="SEARCHBAR" />
-        <button className="search-button">Search</button>
-        </div>
-    </nav>
-    </div>
-  )
+    );
+  }
 }
 
-const mapStateToProps = state => ({
-  /* user: state.currentUser && state.users &&
-    // state.users[userId(state.currentUser.jwt
-    )] */
+
+const mapStateToProps = (state) => ({
+  user: state.currentUser
 })
 
-export default withRouter(
-  connect(mapStateToProps)(NavBar)
-)
+export default connect(mapStateToProps)(Navbar)
+
+
+
