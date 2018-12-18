@@ -6,10 +6,11 @@ export const PlannerList = (props) => {
 
     return (
         <div className='planner'>
-            <h1 className='planner-list'>YOUR WEEKLY PLANNER</h1>
+            <h1 className='planner-title'>YOUR WEEKLY PLANNER</h1>
             <ul><li>BREAKFAST</li><li>LUNCH</li><li style={{fontWeight: 'bold'}}>DINNER</li><li>SNACK</li></ul>
             <div><button className='button'>Add all to Shopping List</button></div>
-            <ul>
+            
+            <ul className='planner-recipes'>
                 {props.planner.map(day => {
                     return (
                         <li className='planner' key={day.id}>

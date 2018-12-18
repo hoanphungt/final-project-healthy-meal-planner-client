@@ -5,7 +5,9 @@ import currentUser from './currentUser'
 import login from './login'
 import recipe from './recipe'
 import signup from './signup'
+import shoppingList from './shoppingList'
 import user from './user'
+
 
 export default combineReducers({
     planner,
@@ -14,6 +16,7 @@ export default combineReducers({
     currentUser,
     user,
     login,
-    signup
+    signup,
+    shoppingList,
 })
 

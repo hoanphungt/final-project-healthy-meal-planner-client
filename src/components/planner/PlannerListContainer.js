@@ -11,7 +11,7 @@ class PlannerListContainer extends React.Component {
     }
 
     render() {
-        return (<div>
+        return (<div className='planner-list'>
             <PlannerList planner={this.props.planner}/>
         </div>)
     }

@@ -12,6 +12,7 @@ import { Footer } from './components/footer/Footer';
 import './App.css'
 import Navbar from './components/navbar/Navbar'
 import AddRepFormContainer from './components/addrep/AddRepFormContainer';
+import ShoppingListContainer from './components/shoppingList/ShoppingListContainer';
 
 
 
@@ -20,7 +21,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-           <header>
+           <header className="App-header">
             <Navbar />
           </header>    
           <main className='container'>
@@ -29,6 +30,7 @@ class App extends Component {
             <Route exact path='/planner' component={PlannerListContainer} />
             <Route exact path='/recipes/:id' component={RecipeDetailsContainer} />
             <Route exact path='/recipes' component={RecipeListContainer} />
+            <Route exact path='/shopping-list' component={ShoppingListContainer} />
             <Route exact path='/signup' component={SignupFormContainer} />
             <Route exact path='/login' component={LoginFormContainer} />
             <Route exact path='/logout' component={LogoutPage} />            
