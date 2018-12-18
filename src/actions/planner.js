@@ -8,21 +8,7 @@ const plannerLoaded = (planner) => ({
     payload: planner
 })
 
-// export const loadPlanner = () => (dispatch, getState) => {
-//     if (getState().planner) return
 
-//     if (!getState().currentUser) return alert('You need to login to see your planner')
-//     const jwt = getState().currentUser.jwt
-
-//     request
-//         .get(`${baseUrl}/myplanner`)
-//         .set('Authorization', `Bearer ${jwt}`)
-//         .query(3)
-//         .then(response => {
-//             dispatch(plannerLoaded(response.body))
-//         })
-//         .catch(console.error)
-// }
 
 export const loadPlanner = (offset) => (dispatch, getState) => {
     if (getState().planner) return

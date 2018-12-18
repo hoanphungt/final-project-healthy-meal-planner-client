@@ -18,7 +18,7 @@ import ShoppingListContainer from './components/shoppingList/ShoppingListContain
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
+      <Provider store = {store}>
         <div className="App">
            <header className="App-header">
             <Navbar />
@@ -38,6 +38,7 @@ class App extends Component {
           </footer>  
         </div>
       </Provider>
+
     );
   }
 }
