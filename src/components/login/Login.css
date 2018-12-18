@@ -1,6 +1,6 @@
 .login {
     text-align: center;
-    margin-top: 2%;
+    margin-top: 0;
     width: 100%
 }
 
@@ -8,7 +8,8 @@
     text-align: center;
     font-family: 'Dosis';
     font-size: 30px;
-    font-weight: bold
+    font-weight: bold;
+    color: #023C40
 }
 
 .email {
@@ -16,7 +17,7 @@
     height: 60px;
     border-radius: 20px;
     padding-left: 20px;
-    border-color: black
+    border: solid 1px #023C40
 }
 
 .password {
@@ -24,7 +25,7 @@
     height: 60px;
     border-radius: 20px;
     padding-left: 20px;
-    border-color: black;
+    border: solid 1px #023C40;
     margin-top: 20px
 }
 
@@ -37,7 +38,8 @@
     color: white;
     font-family: 'Dosis';
     font-size: 18px;
-    font-weight: bold
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .user-box {

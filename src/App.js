@@ -20,9 +20,7 @@ class App extends Component {
     return (
       <Provider store = {store}>
         <div className="App">
-           <header className="App-header">
-            <Navbar />
-          </header>    
+          <Navbar />
           <main className='container'>
             <Route exact path='/planner' component={PlannerListContainer} />
             <Route exact path='/recipes/:id' component={RecipeDetailsContainer} />
@@ -38,7 +36,6 @@ class App extends Component {
           </footer>  
         </div>
       </Provider>
-
     );
   }
 }

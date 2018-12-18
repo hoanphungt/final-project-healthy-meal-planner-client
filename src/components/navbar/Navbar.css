@@ -16,13 +16,13 @@
 
 .search-box{
   position: absolute;
-  left: 18%;
+  left: 20%;
   top: 150px;
-  height: 42px;
+  height: 50px;
   width: 45%;
   bottom: 0%;
-  background: #E4E4E4;
-  border: 1px solid #FFFFFF;
+  background: #FFFFFF;
+  border: 1px solid #023C40;
   border-radius: 20px;
   padding-left: 15px;
 
@@ -30,16 +30,17 @@
 }
 .search-button{
   position: absolute;
-  left: 64%;
+  left: 66%;
   top: 150px;
-  height: 42px;
+  height: 50px;
   width: 12%;
   bottom: 0%;
   background: #E4E4E4;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
-  border-radius: 20px;
-  background-color: #7CC91E
+  border-radius: 50px;
+  background-color: #339989;
+  color: #E4E4E4;
 }
 
 ul.bar li{
@@ -53,7 +54,7 @@ ul.bar li img{
 
 ul.bar{
   position: relative;
-  left: 38%;
+  left: 50%;
   width: 100%;
   height: 100px
 }

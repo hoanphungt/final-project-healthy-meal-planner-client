@@ -7,8 +7,8 @@ export const PlannerList = (props) => {
     return (
         <div className='planner'>
             <h1 className='planner-title'>YOUR WEEKLY PLANNER</h1>
-            <ul><li>BREAKFAST</li><li>LUNCH</li><li style={{fontWeight: 'bold'}}>DINNER</li><li>SNACK</li></ul>
-            <div><button className='button'>Add all to Shopping List</button></div>
+            <ul className='meal-time'><li>BREAKFAST</li><li>LUNCH</li><li style={{fontWeight: 'bold'}}>DINNER</li><li>SNACK</li></ul>
+            <div><button className='button'>ADD ALL TO SHOPPING LIST</button></div>
             
             <ul className='planner-recipes'>
                 {props.planner.planner.map(day => {
@@ -18,7 +18,6 @@ export const PlannerList = (props) => {
                             <h3 style={{fontWeight: 'bold'}}>{day.recipe.name.toUpperCase()}</h3>
                             <span>COOKING TIME: {day.recipe.cookingTime} MINUTES</span><br></br>
                             <i className="small material-icons">star_border star_border star_border star_border star_border</i><br></br>
-                            <span>NUTRITION INFO</span><br></br>
                             <button className='change-button'>CHANGE</button>
                             <button className='add-to-shopping-list-button'>ADD TO LIST</button>
                         </li>
