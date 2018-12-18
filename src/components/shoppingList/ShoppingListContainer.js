@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux';
 import { ShoppingList } from './ShoppingList';
+import { clearShoppingList } from '../../actions/shoppingList'
 
 const isEmpty = (obj) => {
   for (var key in obj) {
@@ -11,6 +12,9 @@ const isEmpty = (obj) => {
 }
 
 class ShoppingListContainer extends React.Component {
+  clearShoppingListHandler = () => {
+    this.props.clearShoppingList()
+  }
 
   render() {
     if (isEmpty(this.props.shoppingList)) {
@@ -21,7 +25,7 @@ class ShoppingListContainer extends React.Component {
     }
 
     return <div>
-      <ShoppingList shoppingList={Object.values(this.props.shoppingList)} />
+      <ShoppingList shoppingList={Object.values(this.props.shoppingList)} clearShoppingList={this.clearShoppingListHandler} />
     </div>
   }
 }
@@ -30,5 +34,5 @@ const mapStateToProps = (state) => ({
   shoppingList: state.shoppingList
 })
 
-export default connect(mapStateToProps)(ShoppingListContainer)
+export default connect(mapStateToProps, { clearShoppingList })(ShoppingListContainer)
 

@@ -1,4 +1,4 @@
-import { ADD_TO_SHOPPING_LIST } from "../actions/shoppingList";
+import { ADD_TO_SHOPPING_LIST, CLEAR_SHOPPING_LIST } from "../actions/shoppingList";
 
 const addToShoppingList = (oldShoppingList, recipe, household) => {
   const recipeIngredients = recipe.recipeIngredients 
@@ -28,11 +28,15 @@ const addToShoppingList = (oldShoppingList, recipe, household) => {
 
 }
 
-export default (state = {}, action = {}) => {
+const initialState = {}
+
+export default (state = initialState, action = {}) => {
     switch (action.type){
         case ADD_TO_SHOPPING_LIST:
-        
         return addToShoppingList(state, action.payload.recipe, action.payload.household)
+
+        case CLEAR_SHOPPING_LIST:
+        return {}
 
         default:
         return state

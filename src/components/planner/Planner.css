@@ -91,7 +91,7 @@ i.small {
     font-family: 'Dosis';
     font-size: 14px;
     font-weight: bold;
-    color: #E4E4E4;
+    color: white;
     cursor: pointer;
 }
 
@@ -109,7 +109,7 @@ i.small {
     padding: 4px;
     border-radius: 20px;
     background-color: #7CC91E;
-    color: #E4E4E4
+    color: white
 }
 
 .add-to-shopping-list-button {
@@ -126,5 +126,5 @@ i.small {
     padding: 4px;
     border-radius: 20px;
     background-color: #7CC91E;
-    color: #E4E4E4
+    color: white
 } 

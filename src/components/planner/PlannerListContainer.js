@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { PlannerList } from './PlannerList';
 import { loadPlanner } from '../../actions/planner'
 import { loadUser } from '../../actions/user'
-
 import './Planner.css'
+import { addToShoppingList } from '../../actions/shoppingList'
 
 class PlannerListContainer extends React.Component {
     componentDidMount() {
@@ -12,9 +12,15 @@ class PlannerListContainer extends React.Component {
         this.props.loadUser()
     }
 
+    addAllToShoppingListHandler = () => {
+        const household = this.props.user.adultsNumber + this.props.user.childrenNumber / 2
+        const allRecipesArr = this.props.planner.planner.map(plannerItem => plannerItem.recipe)
+        allRecipesArr.map(recipe => this.props.addToShoppingList(recipe, household))
+    }
+
     render() {
         return (<div className='planner-list'>
-            <PlannerList planner={this.props.planner}/>
+            <PlannerList planner={this.props.planner} addAllToShoppingList={this.addAllToShoppingListHandler} />
         </div>)
     }
 }
@@ -24,4 +30,4 @@ const mapStateToProps = (state) => ({
     user: state.user
 })
 
-export default connect(mapStateToProps, {loadPlanner, loadUser})(PlannerListContainer) 
+export default connect(mapStateToProps, { loadPlanner, loadUser, addToShoppingList })(PlannerListContainer) 
