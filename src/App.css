@@ -27,3 +27,8 @@ body, input {
   margin: 0;
   padding: 0;
 }
+
+.App-header {
+  width: 100%;
+  height: 220px;
+}
