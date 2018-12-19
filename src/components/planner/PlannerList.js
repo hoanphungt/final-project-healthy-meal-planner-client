@@ -19,7 +19,7 @@ export const PlannerList = (props) => {
                             <div className="ratings">
                                 <i className="small material-icons">star_border star_border star_border star_border star_border</i><br></br>
                             </div>
-                            <button className='change-button'>CHANGE</button>
+                            <button className='change-button'><Link to={`/recipes/days/${day.id}`}>CHANGE</Link></button>
                             <button className='add-to-shopping-list-button' onClick={() => props.addToShoppingList(day.recipe)}>ADD TO LIST</button>
                         </li>
                     )

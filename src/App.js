@@ -13,6 +13,9 @@ import './App.css'
 import Navbar from './components/navbar/Navbar'
 import AddRepFormContainer from './components/addrep/AddRepFormContainer';
 import ShoppingListContainer from './components/shoppingList/ShoppingListContainer';
+// Testing change recipe button from weekly plqnner
+import RecipeDetailsContainerDays from './components/recipes/RecipeDetailsContainerDays';
+import RecipeListContainerDays from './components/recipes/RecipeListContainerDays';
 
 
 
@@ -32,6 +35,11 @@ class App extends Component {
             <Route exact path='/signup' component={SignupFormContainer} />
             <Route exact path='/login' component={LoginFormContainer} />
             <Route exact path='/logout' component={LogoutPage} />            
+            {/* Testing change recipe button from weekly planner */}
+            <Route exact path='/recipes/:id/days/:id' component={RecipeDetailsContainer} />
+            <Route exact path='/recipes/days/:id' component={RecipeListContainer} />
+            {/* <Route exact path='/recipes/:id/days/:id' component={RecipeDetailsContainerDays} />
+            <Route exact path='/recipes/days/:id' component={RecipeListContainerDays} />*/}
             <Route exact path='/' render={() => <Redirect to='/planner' />} />
           </main>
           <footer className="App-footer">
