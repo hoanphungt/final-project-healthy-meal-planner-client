@@ -1,16 +1,21 @@
+.planner-title {
+    width: 100%;
+}
+
 .planner-list {
     width: 100%;
     margin-left: 6%
 }
 
-h1.planner-title {
+ .title1 {
     font-family: 'Dosis';
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
-    margin-top: 2%;
+    /* margin-top: 16.5%;
+    margin-left: 20%; */
+    margin-right: 18%;
     color: #023C40;
-    margin-left: 26%
-}
+} 
 
 ul.meal-time li {
     color: #023C40;
@@ -54,8 +59,6 @@ li {
     margin: 20px;
     font-size: 18px;
 }
-  
-
   
 li.add-button:last-of-type {
     display: inline-block;
@@ -129,3 +132,32 @@ i.small {
     background-color: #7CC91E;
     color: white
 } 
+
+.previous{
+    font-family: 'Dosis';
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 22px;
+    color: #023C40;
+    cursor: pointer;
+    margin-left: 2%;
+    margin-right: 20%;
+    letter-spacing: -2.5%
+}
+
+.next{
+    font-family: 'Dosis';
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 22px;
+    color: #023C40;
+    cursor: pointer;
+    /* margin-left: 60%; */
+    letter-spacing: -2.5%
+
+}
+
+/* .pagination{
+    margin-top: 2%;
+    position: relative
+} */
