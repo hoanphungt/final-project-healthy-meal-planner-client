@@ -18,7 +18,7 @@ class ShoppingListContainer extends React.Component {
 
   render() {
     if (isEmpty(this.props.shoppingList)) {
-      return <div>
+      return <div className='empty-shoppinglist'>
         <h1>MY SHOPPING LIST</h1>
         <h2>Add recipes to your shopping list</h2>
       </div>

@@ -51,3 +51,7 @@ h1.shopping-list-title {
   color: white;
   cursor: pointer;
 }
+
+.empty-shoppinglist{
+  height: 400px
+}
