@@ -105,8 +105,8 @@ export const RecipeList = (props) => {
 
                             <i className="small material-icons">star_border star_border star_border star_border star_border</i><br></br>
                             </div>
-                            <button className='change-button'>CHANGE</button>
-                            <button className='add-to-shopping-list-button'>ADD TO LIST</button>
+                            <button className='change-button' disabled>CHANGE</button>
+                            <button className='add-to-shopping-list-button' disabled>ADD TO LIST</button>
                         </li>
                     )
                 })}

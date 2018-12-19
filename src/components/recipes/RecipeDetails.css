@@ -36,18 +36,20 @@
 }
 
 .add-planner{
-  width: 20%;
+  width: 23%;
   height: 53px;
   border-radius: 50px;
   font-family: 'Dosis';
   font-weight: bold;
   font-size:12px;
   background-color: #7CC91E;
-  color: white
+  color: #F6F6F6;
+  cursor: pointer;
+
 }
 
 .favorites{
-  width: 20%;
+  width: 21.5%;
   height: 53px;
   border-radius: 50px;
   font-family: 'Dosis';
@@ -55,11 +57,11 @@
   font-weight: bold;
   font-size:12px;
   background-color: #339989;
-  color: white
+  color: #F6F6F6
 }
 
-.shopping{
-  width: 20%;
+ .shopping{
+  width: 23%;
   height: 53px;
   border-radius: 50px;
   font-family: 'Dosis';
@@ -67,8 +69,9 @@
   font-weight: bold;
   font-size:12px;
   background-color: #339989;
-  color: white
-}
+  color: #F6F6F6;
+  cursor: pointer;
+} 
 
 .left-image {
   width: 50%;

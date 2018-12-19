@@ -39,7 +39,7 @@ ul.bar2{
   text-transform: uppercase;
   cursor: pointer;
 }
-.signup a{
+.signup {
   color: white
 
 }
@@ -60,7 +60,7 @@ ul.bar2{
   cursor: pointer;
 }
 
-.login1 a {
+.login1 {
   color: #339989;
 }
 

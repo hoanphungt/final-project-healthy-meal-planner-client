@@ -2,12 +2,19 @@
   width: 100%;
   height: 240px;
   top: 0px;
-  background: url('https://serving.photos.photobox.com/07187503ef767b522498d5e0a57aa5ca10714645647b6f4430bd20f9a68ed49b8bb547b1.jpg');
+  background-image: url('header.jpg');
   position: relative;
   background-size: 100% 240px;
+  
 }
 
 .nav-wrapper1 a{
+  color: #023C40;
+  font-family: 'Dosis';
+  font-weight: bold;
+  font-size: 14px;
+}
+.nav-wrapper1 li{
   color: #023C40;
   font-family: 'Dosis';
   font-weight: bold;
@@ -54,11 +61,21 @@ ul.bar li img{
   height: 40px;
 }
 
+ul.bar li img.logout-avatar{
+  width: 60px;
+  height: 60px;
+}
+
+.logout-container{
+  position: absolute;
+  top: 12%
+}
+
 ul.bar{
-  position: relative;
+  position: absolute;
   left: 50%;
-  width: 100%;
-  height: 100px
+  height: 100px;
+  top: 20px
 }
 
 .logo-pic {
@@ -69,6 +86,6 @@ ul.bar{
 
 .brand-logo {
   position: absolute;
-  left: 8%;
+  left: 6%;
   top: 20px
 }
