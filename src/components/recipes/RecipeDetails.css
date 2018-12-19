@@ -147,7 +147,8 @@
   margin-top: 5px;
   margin-bottom: 5px;
   font-family: 'Open Sans';
-  font-size: 18px
+  font-size: 18px;
+  text-align: justify
 }
 
 b {
