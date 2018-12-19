@@ -15,9 +15,9 @@ class Navbar extends Component {
             <ul className='bar'>
               <li><Link to='/planner'>WEEKLY PLANNER</Link></li>
               <li><Link to='/recipes'>SEARCH</Link></li>
-              <li><Link to='/favorites'>FAVORITES</Link></li>
-              <li><Link to='/favorites'>CREATE YOUR OWN</Link></li>
-              <li><Link to='/favorites'>BLOG</Link></li>
+              <li>FAVORITES</li>
+              <li>CREATE YOUR OWN</li>
+              <li>BLOG</li>
               <li> <Link to='/shopping-list'><img src='images/shoppinglist.svg' alt='shopping-list' /></Link></li>
               <li><div className='logout-container'><Link to='/logout'><img src='images/LogoutAvatar.svg' alt='avatar' className='logout-avatar'/></Link></div></li>
             </ul>

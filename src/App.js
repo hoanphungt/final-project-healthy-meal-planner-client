@@ -11,6 +11,7 @@ import SignupFormContainer from './components/signup/SignupFormContainer';
 import { Footer } from './components/footer/Footer';
 import './App.css'
 import Navbar from './components/navbar/Navbar'
+import AddRepFormContainer from './components/addrep/AddRepFormContainer';
 import ShoppingListContainer from './components/shoppingList/ShoppingListContainer';
 
 class App extends Component {
@@ -20,6 +21,8 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <main className='container'>
+          <Route exact path='/addrep' component={AddRepFormContainer} />
+
             <Route exact path='/planner' component={PlannerListContainer} />
             <Route exact path='/recipes/:id' component={RecipeDetailsContainer} />
             <Route exact path='/recipes' component={RecipeListContainer} />

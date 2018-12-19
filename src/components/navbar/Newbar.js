@@ -12,8 +12,8 @@ export const Newbar = () => {
         <li>ABOUT US</li>
         <li>FAQ</li>
         <li>CONTACT</li>
-        <button className="signup"><Link to={'/signup'}>SIGN UP</Link></button>
-        <button className="login1"><Link to={'/login'}>LOGIN</Link></button>
+        <Link to={'/signup'}><button className="signup">SIGN UP</button></Link>
+        <Link to={'/login'}><button className="login1">LOGIN</button></Link>
       </ul>
     </div>
   )

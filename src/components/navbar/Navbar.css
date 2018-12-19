@@ -5,9 +5,16 @@
   background-image: url('header.jpg');
   position: relative;
   background-size: 100% 240px;
+  
 }
 
 .nav-wrapper1 a{
+  color: #023C40;
+  font-family: 'Dosis';
+  font-weight: bold;
+  font-size: 14px;
+}
+.nav-wrapper1 li{
   color: #023C40;
   font-family: 'Dosis';
   font-weight: bold;
