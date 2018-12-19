@@ -54,11 +54,21 @@ ul.bar li img{
   height: 40px;
 }
 
+ul.bar li img.logout-avatar{
+  width: 60px;
+  height: 60px;
+}
+
+.logout-container{
+  position: absolute;
+  top: 12%
+}
+
 ul.bar{
-  position: relative;
+  position: absolute;
   left: 50%;
-  width: 100%;
-  height: 100px
+  height: 100px;
+  top: 20px
 }
 
 .logo-pic {

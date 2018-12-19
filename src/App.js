@@ -13,8 +13,6 @@ import './App.css'
 import Navbar from './components/navbar/Navbar'
 import ShoppingListContainer from './components/shoppingList/ShoppingListContainer';
 
-
-
 class App extends Component {
   render() {
     return (
@@ -29,7 +27,7 @@ class App extends Component {
             <Route exact path='/signup' component={SignupFormContainer} />
             <Route exact path='/login' component={LoginFormContainer} />
             <Route exact path='/logout' component={LogoutPage} />            
-            <Route exact path='/' render={() => <Redirect to='/planner' />} />
+            <Route exact path='/' render={() => <Redirect to='/login' />} />
           </main>
           <footer className="App-footer">
             <Footer />

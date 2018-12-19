@@ -5,6 +5,7 @@ import { loadPlanner } from '../../actions/planner'
 import { loadUser } from '../../actions/user'
 import './Planner.css'
 import { addToShoppingList } from '../../actions/shoppingList'
+import { Redirect } from 'react-router-dom'
 
 class PlannerListContainer extends React.Component {
 
@@ -25,15 +26,19 @@ class PlannerListContainer extends React.Component {
     }
 
     render() {
-        return (<div className='planner-list'>
-             <PlannerList planner={this.props.planner} addAllToShoppingList={this.addAllToShoppingListHandler} addToShoppingList={this.addToShoppingListHandler} />
-        </div>)
+        if (!this.props.currentUser) return <Redirect to='/login'/>
+        return (
+            <div className='planner-list'>
+                <PlannerList planner={this.props.planner} addAllToShoppingList={this.addAllToShoppingListHandler} addToShoppingList={this.addToShoppingListHandler} />
+            </div>
+        )
     }
 }
 
 const mapStateToProps = (state) => ({
   planner: state.planner,
-  user: state.user
+  user: state.user,
+  currentUser: state.currentUser
 })
 
 export default connect(mapStateToProps, { loadPlanner, loadUser, addToShoppingList })(PlannerListContainer) 

@@ -19,7 +19,7 @@ class Navbar extends Component {
               <li><Link to='/favorites'>CREATE YOUR OWN</Link></li>
               <li><Link to='/favorites'>BLOG</Link></li>
               <li> <Link to='/shopping-list'><img src='images/shoppinglist.svg' alt='shopping-list' /></Link></li>
-              <li><Link to='/logout'><img src='images/Avatar.svg' alt='avatar' /></Link></li>
+              <li><div className='logout-container'><Link to='/logout'><img src='images/LogoutAvatar.svg' alt='avatar' className='logout-avatar'/></Link></div></li>
             </ul>
             <input className="search-box" type="box" placeholder="SEARCHBAR" />
             <button className="search-button">Search</button>
