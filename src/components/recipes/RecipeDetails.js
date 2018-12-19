@@ -16,7 +16,7 @@ export default function RecipeDetails(props) {
         </div>
         <div>
           <button className="add-planner">ADD TO THE PLANNER</button>
-          <button className="favorites">ADD TO FAVOURITE</button>
+          <button className="favorites" disabled>ADD TO FAVOURITE</button>
           <button className="shopping" onClick={props.addToShoppingList}>ADD TO SHOPPING LIST</button>
         </div>
         <div className='meal-information'>
