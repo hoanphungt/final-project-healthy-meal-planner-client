@@ -1,3 +1,7 @@
+.shopping-list-container {
+  margin-bottom: 40px
+}
+
 li.shopping-list-ingredient {
   position: relative;
   display: inline;

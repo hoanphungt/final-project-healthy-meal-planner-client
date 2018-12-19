@@ -78,13 +78,24 @@
   height: 480px;
 }
 
-.image{
+/* .image{
   position: absolute;
-  width: 40%;
+  width: 50%;
   height: 486px;
   left: 50%;
-  top: 80px;
+  top: 20px;
   margin-right: 165px
+} */
+
+.image img {
+  position: absolute;
+  width: 45%;
+  height: 420px;
+  left: 50%;
+  top: 80px;
+  margin-right: 165px;
+  /* height: 380px;
+  width: 80% */
 }
 
 .meal-information {
