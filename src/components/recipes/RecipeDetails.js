@@ -20,7 +20,7 @@ export default function RecipeDetails(props) {
           <button className="shopping" onClick={props.addToShoppingList}><div><i className="material-icons">shopping_basket</i></div>ADD TO SHOPPING LIST</button> 
         </div>
         <div className='meal-information'>
-          <p>SERVES <b>{props.user.adultsNumber}</b><i className="material-icons">person</i> <b>{props.user.childrenNumber}</b><i className="material-icons"> <span> person</span></i> </p>
+          <p>SERVES <b style={{marginLeft: '10px'}}>{props.user.adultsNumber}</b><i className="material-icons">person</i> <b>{props.user.childrenNumber}</b><i className="material-icons"> <span> person</span></i> </p>
           <span><i className="material-icons">access_time</i>{props.recipe.cookingTime} MINUTES</span>
           <p>DIETARY OPTION: {props.recipe.dietary.toUpperCase()}</p>
           <p>ALLERGIES</p>
