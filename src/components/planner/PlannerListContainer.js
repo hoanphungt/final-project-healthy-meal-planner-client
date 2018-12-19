@@ -8,6 +8,10 @@ import { addToShoppingList } from '../../actions/shoppingList'
 
 class PlannerListContainer extends React.Component {
 
+    state = {
+        offset : 0 
+        }
+
     componentDidMount() {
         this.props.loadPlanner()
         this.props.loadUser()
@@ -19,6 +23,13 @@ class PlannerListContainer extends React.Component {
         allRecipesArr.map(recipe => this.props.addToShoppingList(recipe, household))
     }
 
+      onClick = (data) => {
+    this.props.loadPlanner(data.offset)
+    this.setState({
+     offset : data.offset
+    })
+  }
+
     addToShoppingListHandler = (recipe) => {
       const household = this.props.user.adultsNumber + this.props.user.childrenNumber / 2
       this.props.addToShoppingList(recipe, household)
@@ -26,7 +37,12 @@ class PlannerListContainer extends React.Component {
 
     render() {
         return (<div className='planner-list'>
-             <PlannerList planner={this.props.planner} addAllToShoppingList={this.addAllToShoppingListHandler} addToShoppingList={this.addToShoppingListHandler} />
+             <PlannerList planner={this.props.planner} 
+              addAllToShoppingList={this.addAllToShoppingListHandler}
+              addToShoppingList={this.addToShoppingListHandler}
+              onClick={this.onClick}
+              offset={this.state.offset}
+               />
         </div>)
     }
 }
