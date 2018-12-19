@@ -5,9 +5,16 @@
   background: url('https://serving.photos.photobox.com/07187503ef767b522498d5e0a57aa5ca10714645647b6f4430bd20f9a68ed49b8bb547b1.jpg');
   position: relative;
   background-size: 100% 240px;
+  
 }
 
 .nav-wrapper1 a{
+  color: #023C40;
+  font-family: 'Dosis';
+  font-weight: bold;
+  font-size: 14px;
+}
+.nav-wrapper1 li{
   color: #023C40;
   font-family: 'Dosis';
   font-weight: bold;

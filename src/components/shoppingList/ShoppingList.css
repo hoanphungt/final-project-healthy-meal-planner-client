@@ -27,27 +27,39 @@ h1.shopping-list-title {
 }
 
 .print-button{
-  width: 20%;
+  width: 22%;
   height: 53px;
   border-radius: 50px;
   font-family: 'Dosis';
   margin-left: 22px;
   font-weight: bold;
-  font-size:12px;
+  font-size:13px;
   background-color: #339989;
-  color: white;
+  color: #E0E0E0;
   cursor: pointer;
 }
 
 .clear-button{
-  width: 20%;
+  width: 22%;
   height: 53px;
   border-radius: 50px;
   font-family: 'Dosis';
   margin-left: 22px;
   font-weight: bold;
-  font-size:12px;
+  font-size:13px;
   background-color: #339989;
-  color: white;
+  color: #E0E0E0;
   cursor: pointer;
+}
+
+.print{
+  width: 20%;
+  /* display: inline; */
+  top: 50px;
+}
+
+.clear{
+  width: 20%;
+  /* display: inline; */
+  top: 50px;
 }

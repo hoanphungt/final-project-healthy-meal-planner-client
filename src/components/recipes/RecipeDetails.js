@@ -15,9 +15,9 @@ export default function RecipeDetails(props) {
           <i className="material-icons">star_border star_border star_border star_border star_border</i>
         </div>
         <div>
-          <button className="add-planner">ADD TO THE PLANNER</button>
-          <button className="favorites" disabled>ADD TO FAVOURITE</button>
-          <button className="shopping" onClick={props.addToShoppingList}>ADD TO SHOPPING LIST</button>
+          <button className="add-planner"><i className="material-icons">date_range</i>ADD TO THE PLANNER</button>
+          <button className="favorites" disabled><i className="material-icons">favorite_border</i>ADD TO FAVOURITE</button>
+          <button className="shopping" onClick={props.addToShoppingList}><i className="material-icons">shopping_basket</i>ADD TO SHOPPING LIST</button> 
         </div>
         <div className='meal-information'>
           <p>SERVES <b>{props.user.adultsNumber}</b><i className="material-icons">person</i> <b>{props.user.childrenNumber}</b><i className="material-icons"> <span> person</span></i> </p>

@@ -6,8 +6,8 @@ export const ShoppingList = (props) => {
   return (
     <div className='shopping-list-container'>
       <h1 className='shopping-list-title'>MY SHOPPING LIST</h1>
-      <button className='print-button' onClick={window.print}>PRINT SHOPPING LIST</button>
-      <button className='clear-button' onClick={props.clearShoppingList}>CLEAR LIST</button>
+      <button className='print-button' onClick={window.print}><div className="print"><i className="material-icons">print</i></div>PRINT SHOPPING LIST</button>
+      <button className='clear-button' onClick={props.clearShoppingList}><div className="clear"><i className="material-icons">clear</i></div>CLEAR LIST</button>
 
       <ul className='shopping-list'>
         {props.shoppingList.map(ingredient => {
