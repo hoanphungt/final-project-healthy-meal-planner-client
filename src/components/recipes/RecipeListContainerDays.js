@@ -7,11 +7,10 @@ class RecipeListContainerDays extends React.Component {
     componentDidMount() {
         this.props.loadRecipes()
     }
-
     render() {
+
         return <div>
-            {console.log(this.props)}
-            <RecipeListDays recipes={this.props.recipes}/>
+            <RecipeListDays recipes={this.props.recipes} dayId={this.props.match.params.id}/>
         </div>
     }
 }
