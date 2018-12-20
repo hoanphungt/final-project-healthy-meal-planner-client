@@ -130,7 +130,7 @@
 
 .ingredient-preparation {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   width: 100%;
 }
 
@@ -148,7 +148,7 @@
 }
 
 .preparation {
-  position: absolute;
+  position: relative;
   width: 50%;
   margin-top: 20px
 }

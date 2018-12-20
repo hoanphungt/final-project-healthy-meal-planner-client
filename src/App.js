@@ -13,7 +13,6 @@ import './App.css'
 import Navbar from './components/navbar/Navbar'
 import AddRepFormContainer from './components/addrep/AddRepFormContainer';
 import ShoppingListContainer from './components/shoppingList/ShoppingListContainer';
-// DAVID TEST
 import RecipeListContainerDays from './components/recipes/RecipeListContainerDays';
 import RecipeDetailsContainerDays from './components/recipes/RecipeDetailsContainerDays';
 class App extends Component {

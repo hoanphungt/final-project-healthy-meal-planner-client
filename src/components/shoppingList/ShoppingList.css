@@ -19,12 +19,12 @@ li.shopping-list-ingredient {
 
 ul.shopping-list {
   position: relative;
-  top: 50px
+  top: 10px
 }
 
 div.shopping-list-container {
-  width: 50%;
-  margin-left: 14%
+  width: 70%;
+  margin-left: 10%
 }
 
 h1.shopping-list-title {
@@ -44,7 +44,8 @@ h1.shopping-list-title {
   background-color: #339989;
   color: white;
   cursor: pointer;
-  position: absolute;
+  position: relative;
+  top: 0px
 }
 
 .clear-button{
@@ -52,13 +53,14 @@ h1.shopping-list-title {
   height: 53px;
   border-radius: 50px;
   font-family: 'Dosis';
-  margin-left: 160px;
+  margin-left: 10px;
   font-weight: bold;
   font-size:13px;
   background-color: #339989;
   color: white;
   cursor: pointer;
-  position: absolute;
+  position: relative;
+  top: 0px
 }
 
 .empty-shoppinglist{
