@@ -7,15 +7,25 @@ const recipeCreated = (recipe) => ({
 })
 
 export const createRecipe = (data) => (dispatch) => {
-    //if (getState().planner) return
 
-    //if (!getState().currentUser) return alert('You need to login to see your planner')
-    //const offset = getState().offset
     request
         .post(`${baseUrl}/recipes`)
         .send(data)
         .then(response => {
-            // dispatch(recipeCreated(response.body))
+         dispatch(recipeCreated(response.body))
+            console.log(response)
+        })
+        .catch(console.error)
+}
+
+
+export const changeRecipe = (recipeId, dayId ,jwt ) => (getState) => {
+  
+    jwt=jwt.jwt
+    request
+        .patch(`${baseUrl}/days/${dayId}/recipes/${recipeId}`)
+        .set('Authorization', `Bearer ${jwt}`)
+        .then(response => {
             console.log(response)
         })
         .catch(console.error)

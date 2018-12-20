@@ -13,7 +13,9 @@ import './App.css'
 import Navbar from './components/navbar/Navbar'
 import AddRepFormContainer from './components/addrep/AddRepFormContainer';
 import ShoppingListContainer from './components/shoppingList/ShoppingListContainer';
-
+// DAVID TEST
+import RecipeListContainerDays from './components/recipes/RecipeListContainerDays';
+import RecipeDetailsContainerDays from './components/recipes/RecipeDetailsContainerDays';
 class App extends Component {
   render() {
     return (
@@ -25,11 +27,17 @@ class App extends Component {
             <Route exact path='/planner' component={PlannerListContainer} />
             <Route exact path='/recipes/:id' component={RecipeDetailsContainer} />
             <Route exact path='/recipes' component={RecipeListContainer} />
+
+            <Route exact path='/recipes/days/:id' component={RecipeListContainerDays} />
+            <Route exact path='/recipes/days/:dayId/recipes/:id' component={RecipeDetailsContainerDays} />
+
+
             <Route exact path='/shopping-list' component={ShoppingListContainer} />
             <Route exact path='/signup' component={SignupFormContainer} />
             <Route exact path='/login' component={LoginFormContainer} />
             <Route exact path='/logout' component={LogoutPage} />            
             <Route exact path='/' render={() => <Redirect to='/login' />} />
+
           </main>
           <footer className="App-footer">
             <Footer />
