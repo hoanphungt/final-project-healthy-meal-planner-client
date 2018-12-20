@@ -24,7 +24,7 @@ class RecipeDetailsContainerDays extends Component {
   render() {
     return (
       <div className='recipe-details'>
-        <div className='go-back-button' onClick={() => {this.props.history.goBack ()}}> <span className="go-back"><div className="material-icons">chevron_left</div>Go Back</span></div>
+        <div className='go-back-button' onClick={() => {this.props.history.goBack()}}> <span className="go-back"><div className="material-icons">chevron_left</div>Go Back</span></div>
         <RecipeDetailsDays 
         jwt = {this.props.jwt}
         onClick={this.onClick}

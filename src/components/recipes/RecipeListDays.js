@@ -4,7 +4,7 @@ import './RecipeList.css'
 
 export const RecipeListDays = (props) => {
     if (props.recipes === null) return <h1>Loading ...</h1>
-    
+
     return (
         <div className='row'>
             <div className='col s3'>
@@ -98,15 +98,15 @@ export const RecipeListDays = (props) => {
                 {props.recipes.map(recipe => {
                     return (
                         <li key={recipe.id} className='recipe'>
-                            <Link to={`./${props.dayId}/recipes/${recipe.id}`}><img alt='meal' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQoE0L43jH6eh5DxXUaT7TPzIzjb2OcxiXyAcMFqIprusSCkCKw' width='200px' height='160px' /></Link>
+                            <Link to={`./${props.dayId}/recipes/${recipe.id}`}><img alt='meal' src={recipe.image} width='200px' height='160px' /></Link>
                             <h3 style={{ fontWeight: 'bold' }}>{recipe.name.toUpperCase()}</h3>
                             <span>COOKING TIME: {recipe.cookingTime} MINUTES</span><br></br>
                             <div className="ratings">
 
                             <i className="small material-icons">star_border star_border star_border star_border star_border</i><br></br>
                             </div>
-                            <button className='change-button'>CHANGE</button>
-                            <button className='add-to-shopping-list-button'>ADD TO LIST</button>
+                            <button className='change-button' disabled style={{backgroundColor: '#BAC1B8'}}>CHANGE</button>
+                            <button className='add-to-shopping-list-button' disabled style={{backgroundColor: '#BAC1B8'}}>ADD TO LIST</button>
                         </li>
                     )
                 })}

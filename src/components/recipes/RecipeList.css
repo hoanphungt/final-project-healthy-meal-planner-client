@@ -72,3 +72,35 @@ li.recipe {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+.change-button2 {
+    position: absolute;
+    left: 6%;
+    top: 85.14%;
+    bottom: 3.43%;
+    font-family: 'Dosis';
+    font-size: 12px;
+    font-weight: bold;
+    width: 90px;
+    height: 40px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: #BAC1B8;
+    color: white
+}
+
+.add-to-shopping-list-button2 {
+    position: absolute;
+    right: 10%;
+    top: 85.14%;
+    bottom: 3.43%;
+    font-family: 'Dosis';
+    font-size: 12px;
+    font-weight: bold; 
+    width: 95px;
+    height: 40px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: #BAC1B8;
+    color: white
+} 

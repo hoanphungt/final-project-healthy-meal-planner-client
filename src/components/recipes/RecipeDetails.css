@@ -46,7 +46,17 @@
   background-color: #7CC91E;
   color: #F6F6F6;
   cursor: pointer;
+}
 
+.add-planner-disabled{
+  width: 23%;
+  height: 53px;
+  border-radius: 50px;
+  font-family: 'Dosis';
+  font-weight: bold;
+  font-size:12px;
+  background-color: #BAC1B8;
+  color: #F6F6F6;
 }
 
 .favorites{
@@ -57,7 +67,7 @@
   margin-left: 22px;
   font-weight: bold;
   font-size:12px;
-  background-color: #339989;
+  background-color: #BAC1B8;
   color: #F6F6F6
 }
 
