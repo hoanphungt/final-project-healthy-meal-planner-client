@@ -15,7 +15,6 @@ export default function PlannerRecipeDetails(props) {
           <i className="material-icons">star_border star_border star_border star_border star_border</i>
         </div>
         <div>
-
           <Link to={`/recipes/days/${props.dayId}`}><button className="add-planner" ><div><i className="material-icons">crop_rotate</i></div>CHANGE THIS RECIPE</button></Link>
           <button className="favorites" disabled><div><i className="material-icons">favorite_border</i></div>ADD TO FAVOURITE</button>
           <button className="shopping" onClick={props.addToShoppingList}><div><i className="material-icons">shopping_basket</i></div>ADD TO SHOPPING LIST</button> 

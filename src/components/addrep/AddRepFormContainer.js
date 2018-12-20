@@ -8,7 +8,7 @@ class AddRepFormContainer extends React.Component {
             //recipe entity
             name :'',
             image :'',
-            cookingTime :'',
+            cookingTime :0,
             instructions :'',
             diffLevel : '',
             season :'',
@@ -31,24 +31,33 @@ class AddRepFormContainer extends React.Component {
     console.log(this.state)
   }
 
-  onChange = (event) => {
-    this.setState({
-      [event.target.name]: event.target.value,
-    })
+  onChange2 = (event,i) => {
+    let a = this.state[event.target.name].slice(); //creates the clone of the state
+    a[i] = event.target.value;
+    this.setState({[event.target.name]: a});
+    console.log(this.state[event.target.name])
   }
 
 
-  onChange2 = (event) => {
+  onChange = (event) => {
    this.setState({
-      //  this.state[event.target.name].push(event.target.value)
       [event.target.name] : event.target.value
    })
   }
 
+  onChangeNumber = (event) => {
+    this.setState({
+       [event.target.name] : parseInt(event.target.value)
+    })
+   }
+
   render() {
 
     return (<div className='login'>
-      <AddRepForm onSubmit={this.onSubmit} onChange={this.onChange} onChange2={this.onChange2} values={this.state} />
+      <AddRepForm onSubmit={this.onSubmit} onChange={this.onChange} 
+      onChange2={this.onChange2} values={this.state}
+      onChangeNumber={this.onChangeNumber}
+      />
       <p style={{color:"red"}}>{this.props.error}</p>
     </div>)
   }
