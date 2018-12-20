@@ -8,8 +8,6 @@ const plannerLoaded = (planner) => ({
     payload: planner
 })
 
-
-
 export const loadPlanner = (offset) => (dispatch, getState) => {
 
     if (!getState().currentUser) return alert('You need to login to see your planner')
@@ -23,4 +21,3 @@ export const loadPlanner = (offset) => (dispatch, getState) => {
         })
         .catch(console.error)
 }
-

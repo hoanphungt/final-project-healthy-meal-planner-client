@@ -1,7 +1,8 @@
 .recipe-details {
   width: 100%;
   position: relative;
-  top: 20px
+  top: 20px;
+  margin-bottom: 20px
 }
 
 /* .go-back-button {
@@ -78,18 +79,31 @@
   height: 480px;
 }
 
-.image{
+/* .image{
   position: absolute;
-  width: 40%;
+  width: 50%;
   height: 486px;
   left: 50%;
-  top: 80px;
+  top: 20px;
   margin-right: 165px
+} */
+
+.image img {
+  position: absolute;
+  width: 45%;
+  height: 420px;
+  left: 54%;
+  top: 80px;
+  margin-right: 165px;
+  /* height: 380px;
+  width: 80% */
 }
 
 .meal-information {
   margin-top: 20px;
-  line-height: 40px
+  line-height: 40px;
+  font-family: 'Open Sans';
+  font-size: 18px
 }
 
 .nutritionButtons{
@@ -100,6 +114,8 @@
   margin-top: 23px;
   font-size: 14px;
   border-color: #339989;
+  font-family: 'Open Sans';
+  font-size: 14px
 }
 
 .ingredient-preparation {
@@ -116,7 +132,9 @@
 
 .ingredient-list {
   margin-top: 5px;
-  margin-bottom: 5px
+  margin-bottom: 5px;
+  font-family: 'Open Sans';
+  font-size: 18px
 }
 
 .preparation {
@@ -127,7 +145,10 @@
 
 .preparation-list {
   margin-top: 5px;
-  margin-bottom: 5px
+  margin-bottom: 5px;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  text-align: justify
 }
 
 b {

@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
 
 //  function list (onChange2, values,i){
 //     return (

@@ -24,7 +24,7 @@ class ShoppingListContainer extends React.Component {
       </div>
     }
 
-    return <div>
+    return <div className='shopping-list-container'>
       <ShoppingList shoppingList={Object.values(this.props.shoppingList)} clearShoppingList={this.clearShoppingListHandler} />
     </div>
   }

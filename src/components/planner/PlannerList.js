@@ -18,7 +18,7 @@ export const PlannerList = (props) => {
                 {props.planner.planner.map(day => {
                     return (
                         <li className='planner' key={day.id}>
-                            <Link to={`/recipes/${day.recipe.id}`}><img alt='meal' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQoE0L43jH6eh5DxXUaT7TPzIzjb2OcxiXyAcMFqIprusSCkCKw' width='200px' height='160px' /></Link>
+                            <Link to={`/recipes/${day.recipe.id}`}><img alt='meal' src={day.recipe.image} width='200px' height='160px' /></Link>
                             <h3 style={{ fontWeight: 'bold' }}>{day.recipe.name.toUpperCase()}</h3>
                             <span>COOKING TIME: {day.recipe.cookingTime} MINUTES</span><br></br>
                             <div className="ratings">

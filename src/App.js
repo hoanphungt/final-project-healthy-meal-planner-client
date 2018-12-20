@@ -23,8 +23,7 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <main className='container'>
-          <Route exact path='/addrep' component={AddRepFormContainer} />
-
+            <Route exact path='/addrep' component={AddRepFormContainer} />
             <Route exact path='/planner' component={PlannerListContainer} />
             <Route exact path='/recipes/:id' component={RecipeDetailsContainer} />
             <Route exact path='/recipes' component={RecipeListContainer} />
