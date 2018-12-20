@@ -3,7 +3,6 @@ import React from 'react';
 import './RecipeDetails.css'
 
 export default function RecipeDetailsDays(props) {
-
   if (props.recipe === null || props.user === null) return <h1>Loading ...</h1>
 
   return (
@@ -14,7 +13,7 @@ export default function RecipeDetailsDays(props) {
           <i className="material-icons">star_border star_border star_border star_border star_border</i>
         </div>
         <div>
-          <button className="add-planner" onClick={()=>props.onClick(props.recipe.id,props.dayId,props.jwt)} disabled><div><i className="material-icons">date_range</i></div>ADD TO THE PLANNER</button>
+          <button className="add-planner" onClick={()=>props.onClick(props.recipe.id,props.dayId,props.jwt)}><div><i className="material-icons">date_range</i></div>ADD TO THE PLANNER</button>
           <button className="favorites"><div><i className="material-icons">favorite_border</i></div>ADD TO FAVOURITE</button>
           <button className="shopping" onClick={props.addToShoppingList}><div><i className="material-icons">shopping_basket</i></div>ADD TO SHOPPING LIST</button>
         </div>

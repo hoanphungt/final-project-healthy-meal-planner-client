@@ -25,8 +25,5 @@ export const changeRecipe = (recipeId, dayId ,jwt ) => (getState) => {
     request
         .patch(`${baseUrl}/days/${dayId}/recipes/${recipeId}`)
         .set('Authorization', `Bearer ${jwt}`)
-        .then(response => {
-            console.log(response)
-        })
         .catch(console.error)
 }

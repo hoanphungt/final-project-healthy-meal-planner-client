@@ -18,9 +18,7 @@ class RecipeDetailsContainerDays extends Component {
     this.props.addToShoppingList(this.props.recipe, household)
   }
 
-  onClick = (recipeId, dayId, jwt) => { this.props.changeRecipe (recipeId,dayId,jwt)
-// console.log('recipeID ',recipeId,' dayId', dayId)
-  }
+  onClick = (recipeId, dayId, jwt) => {this.props.changeRecipe (recipeId,dayId,jwt)}
   render() {
     return (
       <div className='recipe-details'>
