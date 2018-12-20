@@ -51,10 +51,9 @@ export default function RecipeDetails(props) {
         <li className='preparation'>
           <div className='ingre-prep'><b className="caption">PREPARATION STEPS</b></div>
           <ol>
-            {props.recipe.instructions.split(/\s*(?=[1-9]\.)/g).map(step => {
-              return <li className='preparation-list'>{step}</li>
-            })}
-            
+            {props.recipe.instructions.split(/\s*(?=[1-9]\.)/g).map(step => {              
+              return <li className='preparation-list' key={step}>{step}</li>
+            })}            
           </ol>          
         </li>
       </ul>
