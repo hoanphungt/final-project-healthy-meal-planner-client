@@ -18,7 +18,7 @@ export const PlannerList = (props) => {
                 {props.planner.planner.map(day => {
                     return (
                         <li className='planner' key={day.id}>
-                            <Link to={`/recipes/${day.recipe.id}`}><img alt='meal' src={day.recipe.image} width='200px' height='160px' /></Link>
+                            <Link to={`/planner/days/${day.id}/recipes/${day.recipe.id}`}><img alt='meal' src={day.recipe.image} width='200px' height='160px' /></Link>
                             <h3 style={{ fontWeight: 'bold' }}>{day.recipe.name.toUpperCase()}</h3>
                             <span>COOKING TIME: {day.recipe.cookingTime} MINUTES</span><br></br>
                             <div className="ratings">
@@ -26,7 +26,7 @@ export const PlannerList = (props) => {
                             </div>
                             <Link to={`/recipes/days/${day.id}`}><button className='change-button'>CHANGE</button></Link>
                             <button className='add-to-shopping-list-button' onClick={() => props.addToShoppingList(day.recipe)}>ADD TO LIST</button>
-                        </li>
+                        </li>   
                     )
                 })}
                 <li className='add-button'>

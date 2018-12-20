@@ -39,10 +39,10 @@ class AddRepFormContainer extends React.Component {
 
 
   onChange2 = (event) => {
-  //  this.setState({
-       this.state[event.target.name].push(event.target.value)
-      // [event.target.name] : event.target.value
-  //  })
+   this.setState({
+      //  this.state[event.target.name].push(event.target.value)
+      [event.target.name] : event.target.value
+   })
   }
 
   render() {
