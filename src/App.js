@@ -13,9 +13,13 @@ import './App.css'
 import Navbar from './components/navbar/Navbar'
 import AddRepFormContainer from './components/addrep/AddRepFormContainer';
 import ShoppingListContainer from './components/shoppingList/ShoppingListContainer';
-// DAVID TEST
 import RecipeListContainerDays from './components/recipes/RecipeListContainerDays';
 import RecipeDetailsContainerDays from './components/recipes/RecipeDetailsContainerDays';
+// DAVID TEST
+import PlannerRecipeDetailsContainer from './components/recipes/PlannerRecipeDetailsContainer';
+
+
+
 class App extends Component {
   render() {
     return (
@@ -31,6 +35,7 @@ class App extends Component {
             <Route exact path='/recipes/days/:id' component={RecipeListContainerDays} />
             <Route exact path='/recipes/days/:dayId/recipes/:id' component={RecipeDetailsContainerDays} />
 
+            <Route exact path='/planner/days/:dayId/recipes/:id' component={PlannerRecipeDetailsContainer} />
 
             <Route exact path='/shopping-list' component={ShoppingListContainer} />
             <Route exact path='/signup' component={SignupFormContainer} />
