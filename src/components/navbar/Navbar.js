@@ -5,6 +5,20 @@ import { Newbar } from './Newbar';
 import { Link } from 'react-router-dom'
 
 class Navbar extends Component {
+  state = {}
+
+  onClick = () => {
+    this.setState({
+      search: ''
+    })
+  }
+
+  onChange = (event) => {
+    this.setState({
+      search: event.target.value
+    })
+  }
+
   render() {
     return (
       <div>
@@ -21,8 +35,8 @@ class Navbar extends Component {
               <li> <Link to='/shopping-list'><img src='images/shoppinglist.svg' alt='shopping-list' /></Link></li>
               <li><div className='logout-container'><Link to='/logout'><img src='images/LogoutAvatar.svg' alt='avatar' className='logout-avatar'/></Link></div></li>
             </ul>
-            <input className="search-box" type="box" placeholder="Try 'Dinner' ..." />
-            <button className="search-button">Search</button>
+            <input className="search-box" type="box" placeholder="Try 'Dinner' ..." value={this.state.search} onChange={this.onChange}/>
+            <Link to='/recipes'><button className="search-button" onClick={this.onClick}>Search</button></Link>
           </div>
         }
       </div>
