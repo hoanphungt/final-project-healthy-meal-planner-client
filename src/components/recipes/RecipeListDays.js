@@ -105,8 +105,8 @@ export const RecipeListDays = (props) => {
 
                             <i className="small material-icons">star_border star_border star_border star_border star_border</i><br></br>
                             </div>
-                            <button className='change-button2' >CHANGE</button>
-                            <button className='add-to-shopping-list-button2' >ADD TO LIST</button>
+                            <button className='change-button2' disabled>CHANGE</button>
+                            <button className='add-to-shopping-list-button2' disabled>ADD TO LIST</button>
                         </li>
                     )
                 })}
