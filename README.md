@@ -29,7 +29,11 @@ Start the server using yarn start
 
 ## Authors and acknowledgment
 [Hoan Phung](https://www.linkedin.com/in/hoanphung) - Junior Full-Stack Developer (me)
+
 [Sabina Dhaugoda - Junior Full-Stack Developer](https://www.linkedin.com/in/sabinadhaugoda)
+
 [Alina Rusu - Junior Full-Stack Developer](https://github.com/alex-alina)
+
 [David Behal - Junior Full-Stack Developer](https://github.com/DavidB59)
+
 [Loize Dalco - UX/ UI Designer](https://loized.com/)
